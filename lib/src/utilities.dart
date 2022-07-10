@@ -346,6 +346,24 @@ class LecturesUtilities {
     return null;
   }
 
+  static int? _ordinaryWeekDay(DateTime date, bool isEpiphanyFeast) {
+    if (!isSunday(date)) {
+      DateTime previousSundayDate = previousSunday(date);
+      int? week = _sundayOrdinaryTime(previousSundayDate);
+
+      DateTime epiphanyDate = epiphany(date.year, isEpiphanyFeast);
+      if (epiphanyDate.isSameDate(previousSundayDate) &&
+          (epiphanyDate.isSameDate(sevenJanuary(date.year)) ||
+              epiphanyDate.isSameDate(eightJanuary(date.year)))) {
+        week = 1;
+      }
+      if (week != null && week > 0) {
+        return week;
+      }
+    }
+    return null;
+  }
+
   static int? _weekdayAfterEpiphany(DateTime date, bool isEpiphanyFeast) {
     if (isSunday(date)) {
       return null;
@@ -384,6 +402,12 @@ class LecturesUtilities {
           category: LiturgyEnum.weekdayAfterEpiphany,
           number: number,
           dayOfWeek: null,
+          isFeast: false);
+    } else if ((number = _ordinaryWeekDay(date, isEpiphanyFeast)) != null) {
+      return LiturgyModel(
+          category: LiturgyEnum.ordinaryTime,
+          number: number,
+          dayOfWeek: date.weekday,
           isFeast: false);
     } else {
       return null;

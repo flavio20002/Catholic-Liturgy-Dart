@@ -132,7 +132,7 @@
 "31/05/2020",*,pentecost,null,null,true
 "07/06/2020",*,theMostHolyTrinity,null,null,true
 "14/06/2020",*,theMostHolyBodyAndBloodOfChrist,null,null,true
-"18/06/2020",*,null,null,null,true
+"18/06/2020",*,ordinaryTime,11,4,false
 "19/06/2020",*,sacredHeart,null,null,true
 "20/06/2020",*,immaculateHeartOfMary,null,null,true
 "21/06/2020",*,ordinaryTime,12,null,true
@@ -158,6 +158,9 @@
 "11/06/2021",*,sacredHeart,null,null,true
 "12/06/2021",*,immaculateHeartOfMary,null,null,true
 "26/12/2021",*,holyFamily,null,null,true
+"01/01/2022",*,maryHolyMotherOfGod,null,null,true
+"02/01/2022",true,secondSundayAfterChristmas,null,null,true
+"02/01/2022",false,epiphany,null,null,true
 "24/06/2022",*,sacredHeart,null,null,true
 "25/06/2022",*,immaculateHeartOfMary,null,null,true
 "16/06/2023",*,sacredHeart,null,null,true

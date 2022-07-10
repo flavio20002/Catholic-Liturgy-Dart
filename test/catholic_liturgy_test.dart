@@ -419,13 +419,11 @@ main() async {
 
   group('Liturgy codes', () {
     for (final row in testDataRows) {
-      LiturgyModel? expected = row[2] == 'null'
-          ? null
-          : LiturgyModel(
-              category: EnumToString.fromString(LiturgyEnum.values, row[2]),
-              number: row[3] == 'null' ? null : row[3],
-              dayOfWeek: row[4] == 'null' ? null : row[4],
-              isFeast: row[5] == 'true');
+      LiturgyModel? expected = LiturgyModel(
+          category: EnumToString.fromString(LiturgyEnum.values, row[2]),
+          number: row[3] == 'null' ? null : row[3],
+          dayOfWeek: row[4] == 'null' ? null : row[4],
+          isFeast: row[5] == 'true');
       if (row[1] == '*') {
         checkFeastLiturgy(row[0], true, expected);
         checkFeastLiturgy(row[0], false, expected);
