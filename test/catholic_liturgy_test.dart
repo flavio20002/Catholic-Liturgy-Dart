@@ -60,7 +60,7 @@ main() async {
 
     test('Current Date', () {
       expect(df.format(LecturesUtilities.currentDate()),
-          df.format(LecturesUtilities.currentDate()));
+          df.format(DateTime.now()));
     });
 
     void checkPreviousSunday(String dateString, String expected) {
@@ -202,26 +202,6 @@ main() async {
     checkWeeksBetween('01/06/2020', '08/06/2020', 1);
     checkWeeksBetween('01/06/2020', '25/05/2020', -1);
 
-    void checkChristmas(int year, String expected) {
-      test('Christmas of $year should be on $expected', () {
-        expect(df.format(LecturesUtilities.christmas(year)), expected);
-      });
-    }
-
-    checkChristmas(2020, '25/12/2020');
-    checkChristmas(2021, '25/12/2021');
-
-    void checkAdventStart(int year, String expected) {
-      test('Advent start of $year should be on $expected', () {
-        expect(df.format(LecturesUtilities.adventStart(year)), expected);
-      });
-    }
-
-    checkAdventStart(2021, '28/11/2021');
-    checkAdventStart(2020, '29/11/2020');
-    checkAdventStart(2019, '01/12/2019');
-    checkAdventStart(2018, '02/12/2018');
-
     void checkFeastLecturesCycle(String date, String expected) {
       test('Feast lecture cycle of $date should be $expected', () {
         expect(LecturesUtilities.feastLecturesCycle(parse(date)), expected);
@@ -244,59 +224,6 @@ main() async {
     checkFerialLecturesCycle('01/06/2020', '2');
     checkFerialLecturesCycle('29/11/2020', '1');
 
-    void checkEaster(int year, String expected) {
-      test('Easter of $year should be on $expected', () {
-        expect(df.format(LecturesUtilities.easter(year)), expected);
-      });
-    }
-
-    checkEaster(2020, '12/04/2020');
-    checkEaster(2021, '04/04/2021');
-    checkEaster(2035, '25/03/2035');
-    checkEaster(2038, '25/04/2038');
-    checkEaster(2285, '22/03/2285');
-
-    void checkSixJanuary(int year, String expected) {
-      test('Six January of $year should be on $expected', () {
-        expect(df.format(LecturesUtilities.sixJanuary(year)), expected);
-      });
-    }
-
-    checkSixJanuary(2020, '06/01/2020');
-    checkSixJanuary(2021, '06/01/2021');
-
-    void checkSevenJanuary(int year, String expected) {
-      test('Seven January of $year should be on $expected', () {
-        expect(df.format(LecturesUtilities.sevenJanuary(year)), expected);
-      });
-    }
-
-    checkSevenJanuary(2020, '07/01/2020');
-    checkSevenJanuary(2021, '07/01/2021');
-
-    void checkEightJanuary(int year, String expected) {
-      test('Eight January of $year should be on $expected', () {
-        expect(df.format(LecturesUtilities.eightJanuary(year)), expected);
-      });
-    }
-
-    checkEightJanuary(2020, '08/01/2020');
-    checkEightJanuary(2021, '08/01/2021');
-
-    void checkEpiphany(int year, bool isFeast, String expected) {
-      test('Epiphany of $year with isFeast $isFeast should be on $expected',
-          () {
-        expect(df.format(LecturesUtilities.epiphany(year, isFeast)), expected);
-      });
-    }
-
-    checkEpiphany(2018, true, '06/01/2018');
-    checkEpiphany(2018, false, '07/01/2018');
-    checkEpiphany(2020, true, '06/01/2020');
-    checkEpiphany(2020, false, '05/01/2020');
-    checkEpiphany(2021, true, '06/01/2021');
-    checkEpiphany(2021, false, '03/01/2021');
-
     void checkFirstSundayLent(int year, String expected) {
       test('First Sunday of Lent of $year should be on $expected', () {
         expect(df.format(LecturesUtilities.firstSundayLent(year)), expected);
@@ -308,16 +235,6 @@ main() async {
     checkFirstSundayLent(2035, '11/02/2035');
     checkFirstSundayLent(2038, '14/03/2038');
     checkFirstSundayLent(2285, '08/02/2285');
-
-    void checkSecondSundayOfEaster(int year, String expected) {
-      test('Second Sunday of Easter of $year should be on $expected', () {
-        expect(
-            df.format(LecturesUtilities.secondSundayOfEaster(year)), expected);
-      });
-    }
-
-    checkSecondSundayOfEaster(2020, '19/04/2020');
-    checkSecondSundayOfEaster(2021, '11/04/2021');
 
     void checkAnnunciation(int year, String expected) {
       test('Annunciation of $year should be on $expected', () {

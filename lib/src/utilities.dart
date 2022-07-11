@@ -48,17 +48,19 @@ class LecturesUtilities {
   static int weeksBetweenDates(DateTime date1, DateTime date2) =>
       (date2.difference(date1).inDays / 7).truncate();
 
-  static DateTime christmas(int year) =>
+  static DateTime _christmas(int year) =>
       DateTime.utc(year, DateTime.december, 25);
 
-  static DateTime adventStart(int year) {
-    DateTime christmasDate = christmas(year);
+  static DateTime _adventStart(int year) {
+    DateTime christmasDate = _christmas(year);
     return addWeeksToDate(
         previousSunday(christmasDate), isSunday(christmasDate) ? -4 : -3);
   }
 
   static int liturgyYear(DateTime date) =>
-      (date.compareTo(adventStart(date.year)) >= 0) ? date.year + 1 : date.year;
+      (date.compareTo(_adventStart(date.year)) >= 0)
+          ? date.year + 1
+          : date.year;
 
   static String feastLecturesCycle(DateTime date) {
     switch ((liturgyYear(date) - 2014) % 3) {
@@ -80,7 +82,7 @@ class LecturesUtilities {
     }
   }
 
-  static DateTime easter(int year) {
+  static DateTime _easter(int year) {
     if (year < 1583) {
       throw ArgumentError.value(
           year, 'year', 'Year cannot be earlier than 1583.');
@@ -111,22 +113,22 @@ class LecturesUtilities {
   static DateTime _maryHolyMotherOfGod(int year) =>
       DateTime.utc(year, DateTime.january, 01);
 
-  static DateTime sixJanuary(int year) =>
+  static DateTime _sixJanuary(int year) =>
       DateTime.utc(year, DateTime.january, 6);
 
-  static DateTime sevenJanuary(int year) =>
+  static DateTime _sevenJanuary(int year) =>
       DateTime.utc(year, DateTime.january, 7);
 
-  static DateTime eightJanuary(int year) =>
+  static DateTime _eightJanuary(int year) =>
       DateTime.utc(year, DateTime.january, 8);
 
-  static DateTime epiphany(int year, bool isFeast) =>
-      isFeast ? sixJanuary(year) : nextSunday(_maryHolyMotherOfGod(year));
+  static DateTime _epiphany(int year, bool isFeast) =>
+      isFeast ? _sixJanuary(year) : nextSunday(_maryHolyMotherOfGod(year));
 
   static DateTime _baptismOfTheLord(int year, bool isEpiphanyFeast) {
-    DateTime epiphanyDate = epiphany(year, isEpiphanyFeast);
-    if (epiphanyDate.isSameDate(sevenJanuary(year)) ||
-        epiphanyDate.isSameDate(eightJanuary(year))) {
+    DateTime epiphanyDate = _epiphany(year, isEpiphanyFeast);
+    if (epiphanyDate.isSameDate(_sevenJanuary(year)) ||
+        epiphanyDate.isSameDate(_eightJanuary(year))) {
       return (addDaysToDate(epiphanyDate, 1));
     } else {
       return nextSunday(epiphanyDate);
@@ -134,20 +136,20 @@ class LecturesUtilities {
   }
 
   static DateTime _palmSunday(int year) {
-    return addWeeksToDate(easter(year), -1);
+    return addWeeksToDate(_easter(year), -1);
   }
 
-  static DateTime secondSundayOfEaster(int year) {
-    return addWeeksToDate(easter(year), 1);
+  static DateTime _secondSundayOfEaster(int year) {
+    return addWeeksToDate(_easter(year), 1);
   }
 
   static DateTime firstSundayLent(int year) {
-    return addWeeksToDate(easter(year), -6);
+    return addWeeksToDate(_easter(year), -6);
   }
 
   static DateTime annunciation(int year) {
     DateTime annunciationDate = DateTime.utc(year, DateTime.march, 25);
-    DateTime secondSundayOfEasterDate = secondSundayOfEaster(year);
+    DateTime secondSundayOfEasterDate = _secondSundayOfEaster(year);
     DateTime palmSundayDate = _palmSunday(year);
     if (annunciationDate.isBefore(palmSundayDate) &&
         isSunday(annunciationDate)) {
@@ -172,31 +174,31 @@ class LecturesUtilities {
   }
 
   static DateTime _sacredHeart(int year) {
-    return addDaysToDate(easter(year), 68);
+    return addDaysToDate(_easter(year), 68);
   }
 
   static DateTime _immaculateHeartOfMary(int year) {
-    return addDaysToDate(easter(year), 69);
+    return addDaysToDate(_easter(year), 69);
   }
 
   static DateTime _immaculateConception(int year) =>
       DateTime.utc(year, DateTime.december, 08);
 
-  static DateTime _holyFamily(int year) => isSunday(christmas(year))
+  static DateTime _holyFamily(int year) => isSunday(_christmas(year))
       ? DateTime.utc(year, DateTime.december, 30)
-      : nextSunday(christmas(year));
+      : nextSunday(_christmas(year));
 
   static DateTime? _secondSundayAfterChristmas(int year, bool isEpiphanyFeast) {
     DateTime sundayAfterMaryHolyMotherOfGod =
         nextSunday(_maryHolyMotherOfGod(year));
     return isEpiphanyFeast &&
             sundayAfterMaryHolyMotherOfGod
-                .isBefore(epiphany(year, isEpiphanyFeast))
+                .isBefore(_epiphany(year, isEpiphanyFeast))
         ? sundayAfterMaryHolyMotherOfGod
         : null;
   }
 
-  static DateTime _pentecost(int year) => addWeeksToDate(easter(year), 7);
+  static DateTime _pentecost(int year) => addWeeksToDate(_easter(year), 7);
 
   static int? _sundayOrdinaryTime(DateTime date) {
     int year = date.year;
@@ -204,9 +206,9 @@ class LecturesUtilities {
       return null;
     } else {
       DateTime secondSundayOrdinaryTime =
-          addWeeksToDate(nextSunday(sixJanuary(year)), 1);
+          addWeeksToDate(nextSunday(_sixJanuary(year)), 1);
       int weeksOrdinaryTime = weeksBetweenDates(secondSundayOrdinaryTime, date);
-      int weeksAdvent = weeksBetweenDates(adventStart(year), date);
+      int weeksAdvent = weeksBetweenDates(_adventStart(year), date);
       if (weeksOrdinaryTime >= 0 && date.isBefore(firstSundayLent(year))) {
         return weeksOrdinaryTime + 2;
       } else if (date.isAfter(_pentecost(year)) && weeksAdvent < 0) {
@@ -218,7 +220,7 @@ class LecturesUtilities {
   }
 
   static int? _sundayAdvent(DateTime date) {
-    DateTime adventStartDate = adventStart(date.year);
+    DateTime adventStartDate = _adventStart(date.year);
     if (!isSunday(date) ||
         date.isBefore(adventStartDate) ||
         date.isAfter(addWeeksToDate(adventStartDate, 3))) {
@@ -241,7 +243,7 @@ class LecturesUtilities {
 
   static int? _easterWeek(DateTime date) {
     DateTime previousSundayDate = previousSunday(date);
-    DateTime easterDate = easter(date.year);
+    DateTime easterDate = _easter(date.year);
     if (previousSundayDate.isBefore(easterDate) ||
         previousSundayDate.isAfter(addWeeksToDate(easterDate, 5))) {
       return null;
@@ -254,7 +256,7 @@ class LecturesUtilities {
     if (!isSunday(date)) {
       return null;
     } else {
-      switch (weeksBetweenDates(easter(date.year), date) + 1) {
+      switch (weeksBetweenDates(_easter(date.year), date) + 1) {
         case 7:
           return LiturgyEnum.ascensionOfTheLord;
         case 8:
@@ -272,7 +274,7 @@ class LecturesUtilities {
   static int? _holyWeek(DateTime date) {
     DateTime dateCleaned = cleanDate(date);
     if (isSunday(dateCleaned) ||
-        !nextSunday(dateCleaned).isSameDate(easter(dateCleaned.year))) {
+        !nextSunday(dateCleaned).isSameDate(_easter(dateCleaned.year))) {
       return null;
     } else {
       return dateCleaned.weekday;
@@ -284,7 +286,7 @@ class LecturesUtilities {
     int year = date.year;
     if (date.isSameDate(_sacredHeart(year))) {
       return LiturgyEnum.sacredHeart;
-    } else if (date.isSameDate(epiphany(year, isEpiphanyFeast))) {
+    } else if (date.isSameDate(_epiphany(year, isEpiphanyFeast))) {
       return LiturgyEnum.epiphany;
     } else if (date.isSameDate(saintJoseph(year))) {
       return LiturgyEnum.saintJoseph;
@@ -336,7 +338,7 @@ class LecturesUtilities {
 
   static int? _christmasWeekDay(DateTime date, bool isEpiphanyFeast) {
     if (!isSunday(date)) {
-      DateTime epiphanyDate = epiphany(date.year, isEpiphanyFeast);
+      DateTime epiphanyDate = _epiphany(date.year, isEpiphanyFeast);
       DateTime maryHolyMotherOfGodDate = _maryHolyMotherOfGod(date.year);
       if (date.isAfter(maryHolyMotherOfGodDate) &&
           date.isBefore(epiphanyDate)) {
@@ -351,10 +353,10 @@ class LecturesUtilities {
       DateTime previousSundayDate = previousSunday(date);
       int? week = _sundayOrdinaryTime(previousSundayDate);
 
-      DateTime epiphanyDate = epiphany(date.year, isEpiphanyFeast);
+      DateTime epiphanyDate = _epiphany(date.year, isEpiphanyFeast);
       if (epiphanyDate.isSameDate(previousSundayDate) &&
-          (epiphanyDate.isSameDate(sevenJanuary(date.year)) ||
-              epiphanyDate.isSameDate(eightJanuary(date.year)))) {
+          (epiphanyDate.isSameDate(_sevenJanuary(date.year)) ||
+              epiphanyDate.isSameDate(_eightJanuary(date.year)))) {
         week = 1;
       }
       if (week != null && week > 0) {
@@ -368,7 +370,7 @@ class LecturesUtilities {
     if (isSunday(date)) {
       return null;
     } else {
-      int days = daysBetweenDates(epiphany(date.year, isEpiphanyFeast), date);
+      int days = daysBetweenDates(_epiphany(date.year, isEpiphanyFeast), date);
       return days > 0 && days <= 6 ? days : null;
     }
   }
