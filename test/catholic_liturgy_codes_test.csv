@@ -1,7 +1,11 @@
+"15/03/2008",*,saintJoseph,null,null,true
 "04/01/2015",true,secondSundayAfterChristmas,null,null,true
+"19/03/2015",*,saintJoseph,null,null,true
 "12/06/2015",*,sacredHeart,null,null,true
 "13/06/2015",*,immaculateHeartOfMary,null,null,true
 "03/01/2016",true,secondSundayAfterChristmas,null,null,true
+"19/03/2016",*,saintJoseph,null,null,true
+"04/04/2016",*,annunciation,null,null,true
 "03/06/2016",*,sacredHeart,null,null,true
 "04/06/2016",*,immaculateHeartOfMary,null,null,true
 "27/11/2016",*,advent,1,null,true
@@ -12,6 +16,7 @@
 "08/01/2017",true,baptismOfTheLord,null,null,true
 "09/01/2017",false,baptismOfTheLord,null,null,true
 "15/01/2017",*,ordinaryTime,2,null,true
+"20/03/2017",*,saintJoseph,null,null,true
 "23/06/2017",*,sacredHeart,null,null,true
 "24/06/2017",*,immaculateHeartOfMary,null,null,true
 "31/12/2017",*,holyFamily,null,null,true
@@ -23,6 +28,8 @@
 "04/03/2018",*,lent,3,null,true
 "11/03/2018",*,lent,4,null,true
 "18/03/2018",*,lent,5,null,true
+"19/03/2018",*,saintJoseph,null,null,true
+"09/04/2018",*,annunciation,null,null,true
 "08/06/2018",*,sacredHeart,null,null,true
 "09/06/2018",*,immaculateHeartOfMary,null,null,true
 "25/11/2018",*,ordinaryTime,34,null,true
@@ -35,6 +42,7 @@
 "06/03/2019",*,ash,null,3,true
 "10/03/2019",*,lent,1,null,true
 "17/03/2019",*,lent,2,null,true
+"19/03/2019",*,saintJoseph,null,null,true
 "24/03/2019",*,lent,3,null,true
 "31/03/2019",*,lent,4,null,true
 "07/04/2019",*,lent,5,null,true
@@ -168,6 +176,9 @@
 "08/01/2021",true,weekdayAfterEpiphany,2,null,false
 "08/01/2021",false,weekdayAfterEpiphany,5,null,false
 "10/01/2021",*,baptismOfTheLord,null,null,true
+"21/02/2021",*,lent,1,null,true
+"19/03/2021",*,saintJoseph,null,null,true
+"25/03/2021",*,annunciation,null,null,true
 "04/04/2021",*,easter,1,null,true
 "11/04/2021",*,easter,2,null,true
 "23/05/2021",*,pentecost,null,null,true
@@ -179,6 +190,8 @@
 "01/01/2022",*,maryHolyMotherOfGod,null,null,true
 "02/01/2022",true,secondSundayAfterChristmas,null,null,true
 "02/01/2022",false,epiphany,null,null,true
+"19/03/2022",*,saintJoseph,null,null,true
+"25/03/2022",*,annunciation,null,null,true
 "24/06/2022",*,sacredHeart,null,null,true
 "25/06/2022",*,immaculateHeartOfMary,null,null,true
 "16/06/2023",*,sacredHeart,null,null,true
@@ -187,6 +200,10 @@
 "08/06/2024",*,immaculateHeartOfMary,null,null,true
 "27/06/2025",*,sacredHeart,null,null,true
 "28/06/2025",*,immaculateHeartOfMary,null,null,true
+"11/02/2035",*,lent,1,null,true
 "25/03/2035",*,easter,1,null,true
+"14/03/2038",*,lent,1,null,true
 "25/04/2038",*,easter,1,null,true
+"08/02/2285",*,lent,1,null,true
 "22/03/2285",*,easter,1,null,true
+"30/03/2285",*,annunciation,null,null,true
