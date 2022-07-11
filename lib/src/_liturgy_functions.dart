@@ -200,6 +200,18 @@ class LiturgyFunctions {
     }
   }
 
+  static int? _adventWeek(DateTime date) {
+    if (!DateUtilities.isSunday(date)) {}
+    DateTime previousSundayDate = DateUtilities.previousSunday(date);
+    int? sundayAdventNumber = sundayAdvent(previousSundayDate);
+    if (sundayAdventNumber != null &&
+        sundayAdventNumber > 0 &&
+        sundayAdventNumber <= 3) {
+      return sundayAdventNumber;
+    }
+    return null;
+  }
+
   static LiturgyEnum? solemnityAfterEaster(DateTime date) {
     if (!DateUtilities.isSunday(date)) {
       return null;
@@ -365,6 +377,12 @@ class LiturgyFunctions {
     } else if ((number = _ordinaryWeekDay(date, isEpiphanyFeast)) != null) {
       return LiturgyModel(
           category: LiturgyEnum.ordinaryTime,
+          number: number,
+          dayOfWeek: date.weekday,
+          isFeast: false);
+    } else if ((number = _adventWeek(date)) != null) {
+      return LiturgyModel(
+          category: LiturgyEnum.advent,
           number: number,
           dayOfWeek: date.weekday,
           isFeast: false);
