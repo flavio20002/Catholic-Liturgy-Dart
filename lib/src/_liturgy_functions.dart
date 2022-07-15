@@ -152,7 +152,7 @@ class LiturgyFunctions {
           DateUtilities.weeksBetweenDates(secondSundayOrdinaryTime, date);
       int weeksAdvent = DateUtilities.weeksBetweenDates(
           LiturgyFunctions.adventStart(year), date);
-      if (weeksOrdinaryTime >= 0 && date.isBefore(_firstSundayLent(year))) {
+      if (weeksOrdinaryTime >= -1 && date.isBefore(_firstSundayLent(year))) {
         return weeksOrdinaryTime + 2;
       } else if (date.isAfter(_pentecost(year)) && weeksAdvent < 0) {
         return 35 + weeksAdvent;
@@ -192,7 +192,7 @@ class LiturgyFunctions {
     DateTime easterDate = LiturgyFunctions.easter(date.year);
     if (previousSundayDate.isBefore(easterDate) ||
         previousSundayDate
-            .isAfter(DateUtilities.addWeeksToDate(easterDate, 5))) {
+            .isAfter(DateUtilities.addWeeksToDate(easterDate, 6))) {
       return null;
     } else {
       return DateUtilities.weeksBetweenDates(easterDate, previousSundayDate) +
@@ -274,14 +274,14 @@ class LiturgyFunctions {
     }
   }
 
-  static int? ash(DateTime date) {
+  static bool ash(DateTime date) {
     DateTime dateCleaned = DateUtilities.cleanDate(date);
     return (dateCleaned.weekday < DateTime.wednesday ||
             dateCleaned.weekday > DateTime.saturday ||
             !DateUtilities.nextSunday(dateCleaned)
                 .isSameDate(_firstSundayLent(dateCleaned.year)))
-        ? null
-        : dateCleaned.weekday;
+        ? false
+        : true;
   }
 
   static LiturgyModel? _ferialFixed(DateTime date) {
@@ -349,6 +349,9 @@ class LiturgyFunctions {
     LiturgyModel? ferialFixed = _ferialFixed(date);
     if (ferialFixed != null) {
       return ferialFixed;
+    } else if (ash(date)) {
+      return LiturgyModel(
+          category: LiturgyEnum.ash, dayOfWeek: date.weekday, isFeast: false);
     } else if ((number = lentWeek(date)) != null) {
       return LiturgyModel(
           category: LiturgyEnum.lent,
