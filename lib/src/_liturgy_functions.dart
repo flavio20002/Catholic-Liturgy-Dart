@@ -290,7 +290,7 @@ class LiturgyFunctions {
     String dateFormatted = DateFormat('dd/MM').format(date);
     return ferialFixedLiturgy.containsKey(dateFormatted)
         ? LiturgyModel(
-            category: ferialFixedLiturgy[dateFormatted], isFeast: false)
+            category: ferialFixedLiturgy[dateFormatted]!, isFeast: false)
         : null;
   }
 
@@ -298,7 +298,7 @@ class LiturgyFunctions {
     String dateFormatted = DateFormat('dd/MM').format(date);
     return feastFixedLiturgy.containsKey(dateFormatted)
         ? LiturgyModel(
-            category: feastFixedLiturgy[dateFormatted], isFeast: true)
+            category: feastFixedLiturgy[dateFormatted]!, isFeast: true)
         : null;
   }
 

@@ -85,11 +85,15 @@ enum LiturgyEnum {
 }
 
 class LiturgyModel {
-  final LiturgyEnum? category;
+  final LiturgyEnum category;
   final int? number;
   final int? dayOfWeek;
-  final bool? isFeast;
-  LiturgyModel({this.category, this.number, this.dayOfWeek, this.isFeast});
+  final bool isFeast;
+  LiturgyModel(
+      {required this.category,
+      this.number,
+      this.dayOfWeek,
+      required this.isFeast});
 
   @override
   bool operator ==(other) =>
