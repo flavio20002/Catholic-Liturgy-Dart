@@ -154,7 +154,9 @@ class LiturgyFunctions {
           LiturgyFunctions.adventStart(year), date);
       if (weeksOrdinaryTime >= -1 && date.isBefore(_firstSundayLent(year))) {
         return weeksOrdinaryTime + 2;
-      } else if (date.isAfter(_pentecost(year)) && weeksAdvent < 0) {
+      } else if ((date.isAfter(_pentecost(year)) ||
+              date.isSameDate(_pentecost(year))) &&
+          weeksAdvent < 0) {
         return 35 + weeksAdvent;
       } else {
         return null;
