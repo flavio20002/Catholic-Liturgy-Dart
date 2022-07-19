@@ -10,9 +10,9 @@
 "04/06/2016",*,immaculateHeartOfMary,null,null,true
 "27/11/2016",*,advent,1,null,true
 "30/12/2016",*,holyFamily,null,null,true
-"06/01/2018",true,epiphany,null,null,true
+"06/01/2018",true,epiphany,null,null,true,"Epifania del Signore","The Epiphany of the Lord"
 "06/01/2018",false,christmasWeekDay,6,null,false
-"07/01/2018",false,epiphany,null,null,true
+"07/01/2018",false,epiphany,null,null,true,"Epifania del Signore","The Epiphany of the Lord"
 "08/01/2017",true,baptismOfTheLord,null,null,true
 "09/01/2017",false,baptismOfTheLord,null,null,true
 "15/01/2017",*,ordinaryTime,2,null,true
@@ -39,7 +39,7 @@
 "23/12/2018",*,advent,4,null,true
 "30/12/2018",*,holyFamily,null,null,true
 "20/01/2019",*,ordinaryTime,2,null,true
-"06/03/2019",*,ash,null,3,true
+"06/03/2019",*,ash,null,3,true,"Mercoledì delle ceneri","Ash Wednesday"
 "10/03/2019",*,lent,1,null,true
 "17/03/2019",*,lent,2,null,true
 "19/03/2019",*,saintJoseph,null,null,true
@@ -49,8 +49,8 @@
 "15/04/2019",*,holyWeek,null,1,false
 "16/04/2019",*,holyWeek,null,2,false
 "17/04/2019",*,holyWeek,null,3,false
-"18/04/2019",*,holyWeek,null,4,true
-"19/04/2019",*,holyWeek,null,5,true
+"18/04/2019",*,holyWeek,null,4,true,"Giovedì santo","Holy Thursday"
+"19/04/2019",*,holyWeek,null,5,true,"Venerdì Santo: Passione del Signore","Good Friday of the Lord's Passion"
 "20/04/2019",*,holyWeek,null,6,true
 "09/06/2019",*,pentecost,null,null,true
 "28/06/2019",*,sacredHeart,null,null,true
@@ -60,13 +60,13 @@
 "15/12/2019",*,advent,3,null,true
 "22/12/2019",*,advent,4,null,true
 "29/12/2019",*,holyFamily,null,null,true
-"01/01/2020",*,maryHolyMotherOfGod,null,null,true
+"01/01/2020",*,maryHolyMotherOfGod,null,null,true,"Maria Ss. Madre di Dio","Jan. 1: Mary, Mother of God"
 "02/01/2020",*,saintsBasilAndGregoryNazianzen,null,null,false
 "03/01/2020",*,christmasWeekDay,3,null,false
 "04/01/2020",*,christmasWeekDay,4,null,false
 "05/01/2020",true,secondSundayAfterChristmas,null,null,true
-"05/01/2020",false,epiphany,null,null,true
-"06/01/2020",true,epiphany,null,null,true
+"05/01/2020",false,epiphany,null,null,true,"Epifania del Signore","The Epiphany of the Lord"
+"06/01/2020",true,epiphany,null,null,true,"Epifania del Signore","The Epiphany of the Lord"
 "06/01/2020",false,weekdayAfterEpiphany,1,null,false
 "07/01/2020",true,weekdayAfterEpiphany,1,null,false
 "07/01/2020",false,weekdayAfterEpiphany,2,null,false
@@ -78,97 +78,97 @@
 "10/01/2020",false,weekdayAfterEpiphany,5,null,false
 "11/01/2020",true,weekdayAfterEpiphany,5,null,false
 "11/01/2020",false,weekdayAfterEpiphany,6,null,false
-"12/01/2020",*,baptismOfTheLord,null,null,true
+"12/01/2020",*,baptismOfTheLord,null,null,true,"Battesimo del Signore","Baptism of the Lord"
 "13/01/2020",*,ordinaryTime,1,1,false
 "14/01/2020",*,ordinaryTime,1,2,false
 "15/01/2020",*,ordinaryTime,1,3,false
 "16/01/2020",*,ordinaryTime,1,4,false
 "17/01/2020",*,ordinaryTime,1,5,false
 "18/01/2020",*,ordinaryTime,1,6,false
-"19/01/2020",*,ordinaryTime,2,null,true
+"19/01/2020",*,ordinaryTime,2,null,true,"2° Domenica del Tempo ordinario","2nd Sunday in Ordinary Time"
 "20/01/2020",*,ordinaryTime,2,1,false
 "21/01/2020",*,ordinaryTime,2,2,false
 "22/01/2020",*,ordinaryTime,2,3,false
 "23/01/2020",*,ordinaryTime,2,4,false
 "24/01/2020",*,ordinaryTime,2,5,false
 "25/01/2020",*,theConversionOfSaintPaulTheApostle,null,null,false
-"26/01/2020",*,ordinaryTime,3,null,true
+"26/01/2020",*,ordinaryTime,3,null,true,"3° Domenica del Tempo ordinario","3rd Sunday in Ordinary Time"
 "27/01/2020",*,ordinaryTime,3,1,false
 "28/01/2020",*,ordinaryTime,3,2,false
 "29/01/2020",*,ordinaryTime,3,3,false
 "30/01/2020",*,ordinaryTime,3,4,false
 "31/01/2020",*,ordinaryTime,3,5,false
 "01/02/2020",*,ordinaryTime,3,6,false
-"02/02/2020",*,thePresentationOfTheLord,null,null,true
+"02/02/2020",*,thePresentationOfTheLord,null,null,true,"Presentazione del Signore","The Presentation of the Lord"
 "03/02/2020",*,ordinaryTime,4,1,false
 "04/02/2020",*,ordinaryTime,4,2,false
 "05/02/2020",*,ordinaryTime,4,3,false
 "06/02/2020",*,ordinaryTime,4,4,false
 "07/02/2020",*,ordinaryTime,4,5,false
 "08/02/2020",*,ordinaryTime,4,6,false
-"09/02/2020",*,ordinaryTime,5,null,true
+"09/02/2020",*,ordinaryTime,5,null,true,"5° Domenica del Tempo ordinario","5th Sunday in Ordinary Time"
 "10/02/2020",*,ordinaryTime,5,1,false
 "11/02/2020",*,ordinaryTime,5,2,false
 "12/02/2020",*,ordinaryTime,5,3,false
 "13/02/2020",*,ordinaryTime,5,4,false
 "14/02/2020",*,saintsCyrilAndMethodius,null,null,false
 "15/02/2020",*,ordinaryTime,5,6,false
-"16/02/2020",*,ordinaryTime,6,null,true
+"16/02/2020",*,ordinaryTime,6,null,true,"6° Domenica del Tempo ordinario","6th Sunday in Ordinary Time"
 "17/02/2020",*,ordinaryTime,6,1,false
 "18/02/2020",*,ordinaryTime,6,2,false
 "19/02/2020",*,ordinaryTime,6,3,false
 "20/02/2020",*,ordinaryTime,6,4,false
 "21/02/2020",*,ordinaryTime,6,5,false
 "22/02/2020",*,theChairOfSaintPeterTheApostle,null,null,false
-"23/02/2020",*,ordinaryTime,7,null,true
+"23/02/2020",*,ordinaryTime,7,null,true,"7° Domenica del Tempo ordinario","7th Sunday in Ordinary Time"
 "24/02/2020",*,ordinaryTime,7,1,false
 "25/02/2020",*,ordinaryTime,7,2,false
-"26/02/2020",*,ash,null,3,true
-"27/02/2020",*,ash,null,4,false
-"28/02/2020",*,ash,null,5,false
-"29/02/2020",*,ash,null,6,false
+"26/02/2020",*,ash,null,3,true,"Mercoledì delle ceneri","Ash Wednesday"
+"27/02/2020",*,ash,null,4,false,"Giovedì dopo le Ceneri","Thursday after Ash Wed."
+"28/02/2020",*,ash,null,5,false,"Venerdì dopo le Ceneri","Friday after Ash Wed."
+"29/02/2020",*,ash,null,6,false,"Sabato dopo le Ceneri","Saturday after Ash Wed."
 "01/03/2020",*,lent,1,null,true,"1° Domenica di Quaresima","1st Sunday of Lent"
-"02/03/2020",*,lent,1,1,false
-"03/03/2020",*,lent,1,2,false
-"04/03/2020",*,lent,1,3,false
-"05/03/2020",*,lent,1,4,false
-"06/03/2020",*,lent,1,5,false
-"07/03/2020",*,lent,1,6,false
+"02/03/2020",*,lent,1,1,false,"1° settimana di quaresima, lunedì","Lent, Week 1, Mon"
+"03/03/2020",*,lent,1,2,false,"1° settimana di quaresima, martedì","Lent, Week 1, Tue"
+"04/03/2020",*,lent,1,3,false,"1° settimana di quaresima, mercoledì","Lent, Week 1, Wed"
+"05/03/2020",*,lent,1,4,false,"1° settimana di quaresima, giovedì","Lent, Week 1, Thu"
+"06/03/2020",*,lent,1,5,false,"1° settimana di quaresima, venerdì","Lent, Week 1, Fri"
+"07/03/2020",*,lent,1,6,false,"1° settimana di quaresima, sabato","Lent, Week 1, Sat"
 "08/03/2020",*,lent,2,null,true,"2° Domenica di Quaresima","2nd Sunday of Lent"
-"09/03/2020",*,lent,2,1,false
-"10/03/2020",*,lent,2,2,false
-"11/03/2020",*,lent,2,3,false
-"12/03/2020",*,lent,2,4,false
-"13/03/2020",*,lent,2,5,false
-"14/03/2020",*,lent,2,6,false
+"09/03/2020",*,lent,2,1,false,"2° settimana di quaresima, lunedì","Lent, Week 2, Mon"
+"10/03/2020",*,lent,2,2,false,"2° settimana di quaresima, martedì","Lent, Week 2, Tue"
+"11/03/2020",*,lent,2,3,false,"2° settimana di quaresima, mercoledì","Lent, Week 2, Wed"
+"12/03/2020",*,lent,2,4,false,"2° settimana di quaresima, giovedì","Lent, Week 2, Thu"
+"13/03/2020",*,lent,2,5,false,"2° settimana di quaresima, venerdì","Lent, Week 2, Fri"
+"14/03/2020",*,lent,2,6,false,"2° settimana di quaresima, sabato","Lent, Week 2, Sat"
 "15/03/2020",*,lent,3,null,true,"3° Domenica di Quaresima","3rd Sunday of Lent"
-"16/03/2020",*,lent,3,1,false
-"17/03/2020",*,lent,3,2,false
-"18/03/2020",*,lent,3,3,false
-"19/03/2020",*,saintJoseph,null,null,true
-"20/03/2020",*,lent,3,5,false
-"21/03/2020",*,lent,3,6,false
+"16/03/2020",*,lent,3,1,false,"3° settimana di quaresima, lunedì","Lent, Week 3, Mon"
+"17/03/2020",*,lent,3,2,false,"3° settimana di quaresima, martedì","Lent, Week 3, Tue"
+"18/03/2020",*,lent,3,3,false,"3° settimana di quaresima, mercoledì","Lent, Week 3, Wed"
+"19/03/2020",*,saintJoseph,null,null,true,"San Giuseppe","St. Joseph, Spouse of the Blessed Virgin Mary"
+"20/03/2020",*,lent,3,5,false,"3° settimana di quaresima, venerdì","Lent, Week 3, Fri"
+"21/03/2020",*,lent,3,6,false,"3° settimana di quaresima, sabato","Lent, Week 3, Sat"
 "22/03/2020",*,lent,4,null,true,"4° Domenica di Quaresima","4th Sunday of Lent"
-"23/03/2020",*,lent,4,1,false
-"24/03/2020",*,lent,4,2,false
-"25/03/2020",*,annunciation,null,null,true
-"26/03/2020",*,lent,4,4,false
-"27/03/2020",*,lent,4,5,false
-"28/03/2020",*,lent,4,6,false
+"23/03/2020",*,lent,4,1,false,"4° settimana di quaresima, lunedì","Lent, Week 4, Mon"
+"24/03/2020",*,lent,4,2,false,"4° settimana di quaresima, martedì","Lent, Week 4, Tue"
+"25/03/2020",*,annunciation,null,null,true,"Annunciazione del Signore","The Annunciation of the Lord"
+"26/03/2020",*,lent,4,4,false,"4° settimana di quaresima, giovedì","Lent, Week 4, Thu"
+"27/03/2020",*,lent,4,5,false,"4° settimana di quaresima, venerdì","Lent, Week 4, Fri"
+"28/03/2020",*,lent,4,6,false,"4° settimana di quaresima, sabato","Lent, Week 4, Sat"
 "29/03/2020",*,lent,5,null,true,"5° Domenica di Quaresima","5th Sunday of Lent"
-"30/03/2020",*,lent,5,1,false
-"31/03/2020",*,lent,5,2,false
-"01/04/2020",*,lent,5,3,false
-"02/04/2020",*,lent,5,4,false
-"03/04/2020",*,lent,5,5,false
-"04/04/2020",*,lent,5,6,false
+"30/03/2020",*,lent,5,1,false,"5° settimana di quaresima, lunedì","Lent, Week 5, Mon"
+"31/03/2020",*,lent,5,2,false,"5° settimana di quaresima, martedì","Lent, Week 5, Tue"
+"01/04/2020",*,lent,5,3,false,"5° settimana di quaresima, mercoledì","Lent, Week 5, Wed"
+"02/04/2020",*,lent,5,4,false,"5° settimana di quaresima, giovedì","Lent, Week 5, Thu"
+"03/04/2020",*,lent,5,5,false,"5° settimana di quaresima, venerdì","Lent, Week 5, Fri"
+"04/04/2020",*,lent,5,6,false,"5° settimana di quaresima, sabato","Lent, Week 5, Sat"
 "05/04/2020",*,palmSunday,null,null,true,"Domenica delle Palme","Palm Sunday"
 "06/04/2020",*,holyWeek,null,1,false
 "07/04/2020",*,holyWeek,null,2,false
 "08/04/2020",*,holyWeek,null,3,false
-"09/04/2020",*,holyWeek,null,4,true
-"10/04/2020",*,holyWeek,null,5,true
-"11/04/2020",*,holyWeek,null,6,true
+"09/04/2020",*,holyWeek,null,4,true,"Giovedì santo","Holy Thursday"
+"10/04/2020",*,holyWeek,null,5,true,"Venerdì Santo: Passione del Signore","Good Friday of the Lord's Passion"
+"11/04/2020",*,holyWeek,null,6,true,"Veglia Pasquale","Easter Vigil"
 "12/04/2020",*,easter,1,null,true,"Domenica di Pasqua: Risurrezione del Signore","Easter Sunday: Resurrection of the Lord"
 "13/04/2020",*,easter,1,1,false
 "14/04/2020",*,easter,1,2,false
@@ -218,49 +218,49 @@
 "28/05/2020",*,easter,7,4,false
 "29/05/2020",*,easter,7,5,false
 "30/05/2020",*,easter,7,6,false
-"31/05/2020",*,pentecost,null,null,true
+"31/05/2020",*,pentecost,null,null,true,"Pentecoste","Pentecost Sunday"
 "01/06/2020",*,ordinaryTime,9,1,false
 "02/06/2020",*,ordinaryTime,9,2,false
 "03/06/2020",*,ordinaryTime,9,3,false
 "04/06/2020",*,ordinaryTime,9,4,false
 "05/06/2020",*,ordinaryTime,9,5,false
 "06/06/2020",*,ordinaryTime,9,6,false
-"07/06/2020",*,theMostHolyTrinity,null,null,true
+"07/06/2020",*,theMostHolyTrinity,null,null,true,"Santissima Trinità","Sunday after Pentecost: Holy Trinity"
 "08/06/2020",*,ordinaryTime,10,1,false
 "09/06/2020",*,ordinaryTime,10,2,false
 "10/06/2020",*,ordinaryTime,10,3,false
 "11/06/2020",*,saintBarnabasApostle,null,null,false
 "12/06/2020",*,ordinaryTime,10,5,false
 "13/06/2020",*,saintAnthonyOfPadua,null,null,false
-"14/06/2020",*,theMostHolyBodyAndBloodOfChrist,null,null,true
+"14/06/2020",*,theMostHolyBodyAndBloodOfChrist,null,null,true,"Santissimo Corpo e Sangue di Cristo","Sunday after Trinity Sun: Body and Blood of Christ"
 "15/06/2020",*,ordinaryTime,11,1,false
 "16/06/2020",*,ordinaryTime,11,2,false
 "17/06/2020",*,ordinaryTime,11,3,false
 "18/06/2020",*,ordinaryTime,11,4,false
-"19/06/2020",*,sacredHeart,null,null,true
+"19/06/2020",*,sacredHeart,null,null,true,"Sacro Cuore di Gesù","Sacred Heart Friday"
 "20/06/2020",*,immaculateHeartOfMary,null,null,true
-"21/06/2020",*,ordinaryTime,12,null,true
+"21/06/2020",*,ordinaryTime,12,null,true,"12° Domenica del Tempo ordinario","12th Sunday in Ordinary Time"
 "22/06/2020",*,ordinaryTime,12,1,false
 "23/06/2020",*,ordinaryTime,12,2,false
-"24/06/2020",*,theNativityOfSaintJohnTheBaptist,null,null,true
+"24/06/2020",*,theNativityOfSaintJohnTheBaptist,null,null,true,"Natività di San Giovanni Battista","The Nativity of St. John the Baptist"
 "25/06/2020",*,ordinaryTime,12,4,false
 "26/06/2020",*,ordinaryTime,12,5,false
 "27/06/2020",*,ordinaryTime,12,6,false
-"28/06/2020",*,ordinaryTime,13,null,true
-"29/06/2020",*,saintsPeterAndPaul,null,null,true
+"28/06/2020",*,ordinaryTime,13,null,true,"13° Domenica del Tempo ordinario","13th Sunday in Ordinary Time"
+"29/06/2020",*,saintsPeterAndPaul,null,null,true,"Santi Pietro e Paolo, Apostoli","SS. Peter and Paul, Apostles"
 "30/06/2020",*,ordinaryTime,13,2,false
 "01/07/2020",*,ordinaryTime,13,3,false
 "02/07/2020",*,ordinaryTime,13,4,false
 "03/07/2020",*,saintThomasApostle,null,null,false
 "04/07/2020",*,ordinaryTime,13,6,false
-"05/07/2020",*,ordinaryTime,14,null,true
+"05/07/2020",*,ordinaryTime,14,null,true,"14° Domenica del Tempo ordinario","14th Sunday in Ordinary Time"
 "06/07/2020",*,ordinaryTime,14,1,false
 "07/07/2020",*,ordinaryTime,14,2,false
 "08/07/2020",*,ordinaryTime,14,3,false
 "09/07/2020",*,ordinaryTime,14,4,false
 "10/07/2020",*,ordinaryTime,14,5,false
 "11/07/2020",*,saintBenedictAbbot,null,null,false
-"12/07/2020",*,ordinaryTime,15,null,true
+"12/07/2020",*,ordinaryTime,15,null,true,"15° Domenica del Tempo ordinario","15th Sunday in Ordinary Time"
 "13/07/2020",*,ordinaryTime,15,1,false
 "14/07/2020",*,ordinaryTime,15,2,false
 "15/07/2020",*,ordinaryTime,15,3,false
@@ -274,167 +274,167 @@
 "23/07/2020",*,saintBridget,null,null,false
 "24/07/2020",*,ordinaryTime,16,5,false
 "25/07/2020",*,saintJamesApostle,null,null,false
-"26/07/2020",*,ordinaryTime,17,null,true
+"26/07/2020",*,ordinaryTime,17,null,true,"17° Domenica del Tempo ordinario","17th Sunday in Ordinary Time"
 "27/07/2020",*,ordinaryTime,17,1,false
 "28/07/2020",*,ordinaryTime,17,2,false
 "29/07/2020",*,saintMartha,null,null,false
 "30/07/2020",*,ordinaryTime,17,4,false
 "31/07/2020",*,ordinaryTime,17,5,false
 "01/08/2020",*,ordinaryTime,17,6,false
-"02/08/2020",*,ordinaryTime,18,null,true
+"02/08/2020",*,ordinaryTime,18,null,true,"18° Domenica del Tempo ordinario","18th Sunday in Ordinary Time"
 "03/08/2020",*,ordinaryTime,18,1,false
 "04/08/2020",*,ordinaryTime,18,2,false
 "05/08/2020",*,ordinaryTime,18,3,false
-"06/08/2020",*,theTransfigurationOfTheLord,null,null,true
+"06/08/2020",*,theTransfigurationOfTheLord,null,null,true,"Trasfigurazione del Signore","The Transfiguration of the Lord"
 "07/08/2020",*,ordinaryTime,18,5,false
 "08/08/2020",*,ordinaryTime,18,6,false
-"09/08/2020",*,ordinaryTime,19,null,true
+"09/08/2020",*,ordinaryTime,19,null,true,"19° Domenica del Tempo ordinario","19th Sunday in Ordinary Time"
 "10/08/2020",*,saintLawrencer,null,null,false
 "11/08/2020",*,ordinaryTime,19,2,false
 "12/08/2020",*,ordinaryTime,19,3,false
 "13/08/2020",*,ordinaryTime,19,4,false
 "14/08/2020",*,ordinaryTime,19,5,false
-"15/08/2020",*,theAssumptionOfTheBlessedVirginMary,null,null,true
-"16/08/2020",*,ordinaryTime,20,null,true
+"15/08/2020",*,theAssumptionOfTheBlessedVirginMary,null,null,true,"Assunzione della Beata Vergine Maria","The Assumption of the Blessed Virgin Mary"
+"16/08/2020",*,ordinaryTime,20,null,true,"20° Domenica del Tempo ordinario","20th Sunday in Ordinary Time"
 "17/08/2020",*,ordinaryTime,20,1,false
 "18/08/2020",*,ordinaryTime,20,2,false
 "19/08/2020",*,ordinaryTime,20,3,false
 "20/08/2020",*,ordinaryTime,20,4,false
 "21/08/2020",*,ordinaryTime,20,5,false
 "22/08/2020",*,ordinaryTime,20,6,false
-"23/08/2020",*,ordinaryTime,21,null,true
+"23/08/2020",*,ordinaryTime,21,null,true,"21° Domenica del Tempo ordinario","21st Sunday in Ordinary Time"
 "24/08/2020",*,saintBartholomewApostle,null,null,false
 "25/08/2020",*,ordinaryTime,21,2,false
 "26/08/2020",*,ordinaryTime,21,3,false
 "27/08/2020",*,ordinaryTime,21,4,false
 "28/08/2020",*,ordinaryTime,21,5,false
 "29/08/2020",*,thePassionOfSaintJohnTheBaptist,null,null,false
-"30/08/2020",*,ordinaryTime,22,null,true
+"30/08/2020",*,ordinaryTime,22,null,true,"22° Domenica del Tempo ordinario","22nd Sunday in Ordinary Time"
 "31/08/2020",*,ordinaryTime,22,1,false
 "01/09/2020",*,ordinaryTime,22,2,false
 "02/09/2020",*,ordinaryTime,22,3,false
 "03/09/2020",*,ordinaryTime,22,4,false
 "04/09/2020",*,ordinaryTime,22,5,false
 "05/09/2020",*,ordinaryTime,22,6,false
-"06/09/2020",*,ordinaryTime,23,null,true
+"06/09/2020",*,ordinaryTime,23,null,true,"23° Domenica del Tempo ordinario","23rd Sunday in Ordinary Time"
 "07/09/2020",*,ordinaryTime,23,1,false
 "08/09/2020",*,theNativityOfTheBlessedVirginMary,null,null,false
 "09/09/2020",*,ordinaryTime,23,3,false
 "10/09/2020",*,ordinaryTime,23,4,false
 "11/09/2020",*,ordinaryTime,23,5,false
 "12/09/2020",*,ordinaryTime,23,6,false
-"13/09/2020",*,ordinaryTime,24,null,true
-"14/09/2020",*,theExaltationOfTheHolyCross,null,null,true
+"13/09/2020",*,ordinaryTime,24,null,true,"24° Domenica del Tempo ordinario","24th Sunday in Ordinary Time"
+"14/09/2020",*,theExaltationOfTheHolyCross,null,null,true,"Esaltazione della Santa Croce","The Exaltation of the Holy Cross"
 "15/09/2020",*,ourLadyOfSorrows,null,null,false
 "16/09/2020",*,ordinaryTime,24,3,false
 "17/09/2020",*,ordinaryTime,24,4,false
 "18/09/2020",*,ordinaryTime,24,5,false
 "19/09/2020",*,ordinaryTime,24,6,false
-"20/09/2020",*,ordinaryTime,25,null,true
+"20/09/2020",*,ordinaryTime,25,null,true,"25° Domenica del Tempo ordinario","25th Sunday in Ordinary Time"
 "21/09/2020",*,saintMatthewApostleAndEvangelist,null,null,false
 "22/09/2020",*,ordinaryTime,25,2,false
 "23/09/2020",*,ordinaryTime,25,3,false
 "24/09/2020",*,ordinaryTime,25,4,false
 "25/09/2020",*,ordinaryTime,25,5,false
 "26/09/2020",*,ordinaryTime,25,6,false
-"27/09/2020",*,ordinaryTime,26,null,true
+"27/09/2020",*,ordinaryTime,26,null,true,"26° Domenica del Tempo ordinario","26th Sunday in Ordinary Time"
 "28/09/2020",*,ordinaryTime,26,1,false
 "29/09/2020",*,saintsMichaelGabrielAndRaphaelArchangels,null,null,false
 "30/09/2020",*,ordinaryTime,26,3,false
 "01/10/2020",*,ordinaryTime,26,4,false
 "02/10/2020",*,theHolyGuardianAngels,null,null,false
 "03/10/2020",*,ordinaryTime,26,6,false
-"04/10/2020",*,ordinaryTime,27,null,true
+"04/10/2020",*,ordinaryTime,27,null,true,"27° Domenica del Tempo ordinario","27th Sunday in Ordinary Time"
 "05/10/2020",*,ordinaryTime,27,1,false
 "06/10/2020",*,ordinaryTime,27,2,false
 "07/10/2020",*,ordinaryTime,27,3,false
 "08/10/2020",*,ordinaryTime,27,4,false
 "09/10/2020",*,ordinaryTime,27,5,false
 "10/10/2020",*,ordinaryTime,27,6,false
-"11/10/2020",*,ordinaryTime,28,null,true
+"11/10/2020",*,ordinaryTime,28,null,true,"28° Domenica del Tempo ordinario","28th Sunday in Ordinary Time"
 "12/10/2020",*,ordinaryTime,28,1,false
 "13/10/2020",*,ordinaryTime,28,2,false
 "14/10/2020",*,ordinaryTime,28,3,false
 "15/10/2020",*,ordinaryTime,28,4,false
 "16/10/2020",*,ordinaryTime,28,5,false
 "17/10/2020",*,ordinaryTime,28,6,false
-"18/10/2020",*,ordinaryTime,29,null,true
+"18/10/2020",*,ordinaryTime,29,null,true,"29° Domenica del Tempo ordinario","29th Sunday in Ordinary Time"
 "19/10/2020",*,ordinaryTime,29,1,false
 "20/10/2020",*,ordinaryTime,29,2,false
 "21/10/2020",*,ordinaryTime,29,3,false
 "22/10/2020",*,ordinaryTime,29,4,false
 "23/10/2020",*,ordinaryTime,29,5,false
 "24/10/2020",*,ordinaryTime,29,6,false
-"25/10/2020",*,ordinaryTime,30,null,true
+"25/10/2020",*,ordinaryTime,30,null,true,"30° Domenica del Tempo ordinario","30th Sunday in Ordinary Time"
 "26/10/2020",*,ordinaryTime,30,1,false
 "27/10/2020",*,ordinaryTime,30,2,false
 "28/10/2020",*,saintsSimonAndJudeApostles,null,null,false
 "29/10/2020",*,ordinaryTime,30,4,false
 "30/10/2020",*,ordinaryTime,30,5,false
 "31/10/2020",*,ordinaryTime,30,6,false
-"01/11/2020",*,allSaints,null,null,true
-"02/11/2020",*,theCommemorationOfAllTheFaithfulDeparted,null,null,true
+"01/11/2020",*,allSaints,null,null,true,"Tutti i Santi","All Saints"
+"02/11/2020",*,theCommemorationOfAllTheFaithfulDeparted,null,null,true,"Commemorazione di tutti i fedeli defunti","The Commemoration of All the Faithful Departed (All Souls)"
 "03/11/2020",*,ordinaryTime,31,2,false
 "04/11/2020",*,ordinaryTime,31,3,false
 "05/11/2020",*,ordinaryTime,31,4,false
 "06/11/2020",*,ordinaryTime,31,5,false
 "07/11/2020",*,ordinaryTime,31,6,false
-"08/11/2020",*,ordinaryTime,32,null,true
-"09/11/2020",*,theDedicationOfTheLateranBasilica,null,null,true
+"08/11/2020",*,ordinaryTime,32,null,true,"32° Domenica del Tempo ordinario","32nd Sunday in Ordinary Time"
+"09/11/2020",*,theDedicationOfTheLateranBasilica,null,null,true,"Dedicazione della  Basilica Lateranense","The Dedication of the Lateran Basilica"
 "10/11/2020",*,ordinaryTime,32,2,false
 "11/11/2020",*,ordinaryTime,32,3,false
 "12/11/2020",*,ordinaryTime,32,4,false
 "13/11/2020",*,ordinaryTime,32,5,false
 "14/11/2020",*,ordinaryTime,32,6,false
-"15/11/2020",*,ordinaryTime,33,null,true
+"15/11/2020",*,ordinaryTime,33,null,true,"33° Domenica del Tempo ordinario","33rd Sunday in Ordinary Time"
 "16/11/2020",*,ordinaryTime,33,1,false
 "17/11/2020",*,ordinaryTime,33,2,false
 "18/11/2020",*,ordinaryTime,33,3,false
 "19/11/2020",*,ordinaryTime,33,4,false
 "20/11/2020",*,ordinaryTime,33,5,false
 "21/11/2020",*,thePresentationOfTheBlessedVirginMary,null,null,false
-"22/11/2020",*,ordinaryTime,34,null,true
+"22/11/2020",*,ordinaryTime,34,null,true,"34° Domenica del Tempo ordinario: Cristo Re","34th Sunday in Ordinary Time: Christ the King"
 "23/11/2020",*,ordinaryTime,34,1,false
 "24/11/2020",*,ordinaryTime,34,2,false
 "25/11/2020",*,ordinaryTime,34,3,false
 "26/11/2020",*,ordinaryTime,34,4,false
 "27/11/2020",*,ordinaryTime,34,5,false
 "28/11/2020",*,ordinaryTime,34,6,false
-"29/11/2020",*,advent,1,null,true
+"29/11/2020",*,advent,1,null,true,"1° Domenica di Avvento","1st Sunday of Advent"
 "30/11/2020",*,saintAndrewApostle,null,null,false
 "01/12/2020",*,advent,1,2,false
 "02/12/2020",*,advent,1,3,false
 "03/12/2020",*,advent,1,4,false
 "04/12/2020",*,advent,1,5,false
 "05/12/2020",*,advent,1,6,false
-"06/12/2020",*,advent,2,null,true
+"06/12/2020",*,advent,2,null,true,"2° Domenica di Avvento","2nd Sunday of Advent"
 "07/12/2020",*,advent,2,1,false
-"08/12/2020",*,immaculateConception,null,null,true
+"08/12/2020",*,immaculateConception,null,null,true,"Immacolata Concezione della Beata Vergine Maria","The Immaculate Conception of the Blessed Virgin Mary"
 "09/12/2020",*,advent,2,3,false
 "10/12/2020",*,advent,2,4,false
 "11/12/2020",*,advent,2,5,false
 "12/12/2020",*,advent,2,6,false
-"13/12/2020",*,advent,3,null,true
+"13/12/2020",*,advent,3,null,true,"3° Domenica di Avvento","3rd Sunday of Advent"
 "14/12/2020",*,advent,3,1,false
 "15/12/2020",*,advent,3,2,false
 "16/12/2020",*,advent,3,3,false
 "17/12/2020",*,adventWeekDay17December,null,null,false
 "18/12/2020",*,adventWeekDay18December,null,null,false
 "19/12/2020",*,adventWeekDay19December,null,null,false
-"20/12/2020",*,advent,4,null,true
+"20/12/2020",*,advent,4,null,true,"4° Domenica di Avvento","4th Sunday of Advent"
 "21/12/2020",*,adventWeekDay21December,null,null,false
 "22/12/2020",*,adventWeekDay22December,null,null,false
 "23/12/2020",*,adventWeekDay23December,null,null,false
 "24/12/2020",*,adventWeekDay24December,null,null,false
-"25/12/2020",*,christmas,null,null,true
+"25/12/2020",*,christmas,null,null,true,"Natale del Signore","Christmas"
 "26/12/2020",*,saintStephenTheFirstMartyr,null,null,false
-"27/12/2020",*,holyFamily,null,null,true
+"27/12/2020",*,holyFamily,null,null,true,"Domenica fra l'ottava di Natale: Santa Famiglia","Sunday in Octave of Christmas: Holy Family"
 "28/12/2020",*,theHolyInnocentsMartyrs,null,null,false
 "29/12/2020",*,fifthDayWithinOctaveOfNativity,null,null,false
 "30/12/2020",*,sixthDayWithinOctaveOfNativity,null,null,false
 "31/12/2020",*,seventhDayWithinOctaveOfNativity,null,null,false
-"03/01/2021",false,epiphany,null,null,true
-"06/01/2021",true,epiphany,null,null,true
+"03/01/2021",false,epiphany,null,null,true,"Epifania del Signore","The Epiphany of the Lord"
+"06/01/2021",true,epiphany,null,null,true,"Epifania del Signore","The Epiphany of the Lord"
 "06/01/2021",false,weekdayAfterEpiphany,3,null,false
 "07/01/2021",true,weekdayAfterEpiphany,1,null,false
 "07/01/2021",false,weekdayAfterEpiphany,4,null,false
@@ -448,13 +448,13 @@
 "11/04/2021",*,easter,2,null,true
 "23/05/2021",*,pentecost,null,null,true
 "11/06/2021",*,sacredHeart,null,null,true
-"12/06/2021",*,immaculateHeartOfMary,null,null,true
+"12/06/2021",*,immaculateHeartOfMary,null,null,true,"Cuore Immacolato della Beata Vergine Maria","Immaculate Heart of Mary"
 "28/11/2021",*,advent,1,null,true
 "25/12/2021",*,christmas,null,null,true
 "26/12/2021",*,holyFamily,null,null,true
-"01/01/2022",*,maryHolyMotherOfGod,null,null,true
-"02/01/2022",true,secondSundayAfterChristmas,null,null,true
-"02/01/2022",false,epiphany,null,null,true
+"01/01/2022",*,maryHolyMotherOfGod,null,null,true,"Maria Ss. Madre di Dio","Jan. 1: Mary, Mother of God"
+"02/01/2022",true,secondSundayAfterChristmas,null,null,true,"2° Domenica dopo Natale","2nd Sunday after Christmas"
+"02/01/2022",false,epiphany,null,null,true,"Epifania del Signore","The Epiphany of the Lord"
 "19/03/2022",*,saintJoseph,null,null,true
 "25/03/2022",*,annunciation,null,null,true
 "24/06/2022",*,sacredHeart,null,null,true

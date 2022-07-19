@@ -6,6 +6,7 @@ import 'package:catholic_liturgy/src/descriptions/liturgy_descriptions.dart';
 import 'package:csv/csv.dart';
 import 'package:enum_to_string/enum_to_string.dart';
 import 'package:flutter_test/flutter_test.dart';
+import 'package:intl/date_symbol_data_local.dart';
 import 'package:intl/intl.dart';
 
 main() async {
@@ -65,6 +66,8 @@ main() async {
   }
 
   group('Liturgy codes', () {
+    initializeDateFormatting('it', null);
+    initializeDateFormatting('en', null);
     for (final row in testDataRows) {
       LiturgyModel? expected = LiturgyModel(
           category: EnumToString.fromString(LiturgyEnum.values, row[2])!,

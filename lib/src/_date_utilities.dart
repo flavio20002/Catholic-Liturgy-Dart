@@ -11,6 +11,11 @@ class DateUtilities {
   static String formatDate(DateTime date, String locale) =>
       capitalize(DateFormat('EEEE, d MMMM yyyy', locale).format(date));
 
+  static String dayOfWeek(int dayOfWeek, String locale, bool short) {
+    final date = addDaysToDate(previousSunday(currentDate()), dayOfWeek);
+    return DateFormat(short ? 'EEE' : 'EEEE', locale).format(date);
+  }
+
   static String formatCurrentDate(String locale) =>
       formatDate(currentDate(), locale);
 
