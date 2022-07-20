@@ -53,6 +53,10 @@ class LiturgyDescriptionsIT {
         return liturgyModel.number! >= 2
             ? '${liturgyModel.number}° Domenica di Pasqua'
             : 'Domenica di Pasqua: Risurrezione del Signore';
+      } else {
+        if (liturgyModel.number == 1) {
+          return 'Ottava di Pasqua, ${DateUtilities.dayOfWeek(liturgyModel.dayOfWeek!, LiturgyLanguage.it, false)}';
+        }
       }
     } else if (liturgyModel.category == LiturgyEnum.ash) {
       if (liturgyModel.dayOfWeek == 3) {
@@ -71,7 +75,13 @@ class LiturgyDescriptionsIT {
             : '${liturgyModel.number}° Domenica del Tempo ordinario';
       }
     } else if (liturgyModel.category == LiturgyEnum.holyWeek) {
-      if (liturgyModel.dayOfWeek == 4) {
+      if (liturgyModel.dayOfWeek == 1) {
+        return 'Lunedì santo';
+      } else if (liturgyModel.dayOfWeek == 2) {
+        return 'Martedì santo';
+      } else if (liturgyModel.dayOfWeek == 3) {
+        return 'Mercoledì santo';
+      } else if (liturgyModel.dayOfWeek == 4) {
         return 'Giovedì santo';
       } else if (liturgyModel.dayOfWeek == 5) {
         return 'Venerdì Santo: Passione del Signore';
@@ -84,29 +94,6 @@ class LiturgyDescriptionsIT {
 }
 
 /*
-
-
-3° settimana di quaresima, lunedì
-3° settimana di quaresima, martedì
-3° settimana di quaresima, mercoledì
-3° settimana di quaresima, giovedì
-3° settimana di quaresima, venerdì
-3° settimana di quaresima, sabato
-4° settimana di quaresima, lunedì
-4° settimana di quaresima, martedì
-4° settimana di quaresima, mercoledì
-4° settimana di quaresima, giovedì
-4° settimana di quaresima, venerdì
-4° settimana di quaresima, sabato
-5° settimana di quaresima, lunedì
-5° settimana di quaresima, martedì
-5° settimana di quaresima, mercoledì
-5° settimana di quaresima, giovedì
-5° settimana di quaresima, venerdì
-5° settimana di quaresima, sabato
-Lunedì santo
-Martedì santo
-Mercoledì santo
 Ottava di Pasqua, lunedì
 Ottava di Pasqua, martedì
 Ottava di Pasqua, mercoledì

@@ -73,6 +73,10 @@ class LiturgyDescriptionsEN {
         return liturgyModel.number! >= 2
             ? '${liturgyModel.number}${_ordinal(liturgyModel.number!)} Sunday of Easter'
             : 'Easter Sunday: Resurrection of the Lord';
+      } else {
+        if (liturgyModel.number == 1) {
+          return 'Easter Octave, ${DateUtilities.dayOfWeek(liturgyModel.dayOfWeek!, LiturgyLanguage.en, true)}';
+        }
       }
     } else if (liturgyModel.category == LiturgyEnum.ash) {
       if (liturgyModel.dayOfWeek == 3) {
@@ -91,7 +95,13 @@ class LiturgyDescriptionsEN {
             : '${liturgyModel.number}${_ordinal(liturgyModel.number!)} Sunday in Ordinary Time';
       }
     } else if (liturgyModel.category == LiturgyEnum.holyWeek) {
-      if (liturgyModel.dayOfWeek == 4) {
+      if (liturgyModel.dayOfWeek == 1) {
+        return 'Holy Week, Mon';
+      } else if (liturgyModel.dayOfWeek == 2) {
+        return 'Holy Week, Tues';
+      } else if (liturgyModel.dayOfWeek == 3) {
+        return 'Holy Week, Wed';
+      } else if (liturgyModel.dayOfWeek == 4) {
         return 'Holy Thursday';
       } else if (liturgyModel.dayOfWeek == 5) {
         return "Good Friday of the Lord's Passion";
@@ -105,27 +115,6 @@ class LiturgyDescriptionsEN {
 /*
 
 
-Lent, Week 3, Mon
-Lent, Week 3, Tues
-Lent, Week 3, Wed
-Lent, Week 3, Thurs
-Lent, Week 3, Fri
-Lent, Week 3, Sat
-Lent, Week 4, Mon
-Lent, Week 4, Tues
-Lent, Week 4, Wed
-Lent, Week 4, Thurs
-Lent, Week 4, Fri
-Lent, Week 4, Sat
-Lent, Week 5, Mon
-Lent, Week 5, Tues
-Lent, Week 5, Wed
-Lent, Week 5, Thurs
-Lent, Week 5, Fri
-Lent, Week 5, Sat
-Holy Week, Mon
-Holy Week, Tues
-Holy Week, Wed
 Easter Octave, Mon
 Easter Octave, Tues
 Easter Octave, Wed

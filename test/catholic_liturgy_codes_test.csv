@@ -163,19 +163,19 @@
 "03/04/2020",*,lent,5,5,false,"5° settimana di quaresima, venerdì","Lent, Week 5, Fri"
 "04/04/2020",*,lent,5,6,false,"5° settimana di quaresima, sabato","Lent, Week 5, Sat"
 "05/04/2020",*,palmSunday,null,null,true,"Domenica delle Palme","Palm Sunday"
-"06/04/2020",*,holyWeek,null,1,false
-"07/04/2020",*,holyWeek,null,2,false
-"08/04/2020",*,holyWeek,null,3,false
+"06/04/2020",*,holyWeek,null,1,false,"Lunedì santo","Holy Week, Mon"
+"07/04/2020",*,holyWeek,null,2,false,"Martedì santo","Holy Week, Tues"
+"08/04/2020",*,holyWeek,null,3,false,"Mercoledì santo","Holy Week, Wed"
 "09/04/2020",*,holyWeek,null,4,true,"Giovedì santo","Holy Thursday"
 "10/04/2020",*,holyWeek,null,5,true,"Venerdì Santo: Passione del Signore","Good Friday of the Lord's Passion"
 "11/04/2020",*,holyWeek,null,6,true,"Veglia Pasquale","Easter Vigil"
 "12/04/2020",*,easter,1,null,true,"Domenica di Pasqua: Risurrezione del Signore","Easter Sunday: Resurrection of the Lord"
-"13/04/2020",*,easter,1,1,false
-"14/04/2020",*,easter,1,2,false
-"15/04/2020",*,easter,1,3,false
-"16/04/2020",*,easter,1,4,false
-"17/04/2020",*,easter,1,5,false
-"18/04/2020",*,easter,1,6,false
+"13/04/2020",*,easter,1,1,false,"Ottava di Pasqua, lunedì","Easter Octave, Mon"
+"14/04/2020",*,easter,1,2,false,"Ottava di Pasqua, martedì","Easter Octave, Tue"
+"15/04/2020",*,easter,1,3,false,"Ottava di Pasqua, mercoledì","Easter Octave, Wed"
+"16/04/2020",*,easter,1,4,false,"Ottava di Pasqua, giovedì","Easter Octave, Thu"
+"17/04/2020",*,easter,1,5,false,"Ottava di Pasqua, venerdì","Easter Octave, Fri"
+"18/04/2020",*,easter,1,6,false,"Ottava di Pasqua, sabato","Easter Octave, Sat"
 "19/04/2020",*,easter,2,null,true,"2° Domenica di Pasqua","2nd Sunday of Easter"
 "20/04/2020",*,easter,2,1,false
 "21/04/2020",*,easter,2,2,false
