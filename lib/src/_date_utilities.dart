@@ -1,3 +1,5 @@
+import 'package:catholic_liturgy/src/model.dart';
+import 'package:enum_to_string/enum_to_string.dart';
 import 'package:intl/intl.dart';
 
 class DateUtilities {
@@ -8,16 +10,20 @@ class DateUtilities {
 
   static DateTime currentDate() => cleanDate(DateTime.now());
 
-  static String formatDate(DateTime date, String locale) =>
-      capitalize(DateFormat('EEEE, d MMMM yyyy', locale).format(date));
+  static String formatDate(DateTime date, LiturgyLanguage language) =>
+      capitalize(DateFormat(
+              'EEEE, d MMMM yyyy', EnumToString.convertToString(language))
+          .format(date));
 
-  static String dayOfWeek(int dayOfWeek, String locale, bool short) {
+  static String dayOfWeek(int dayOfWeek, LiturgyLanguage language, bool short) {
     final date = addDaysToDate(previousSunday(currentDate()), dayOfWeek);
-    return DateFormat(short ? 'EEE' : 'EEEE', locale).format(date);
+    return DateFormat(
+            short ? 'EEE' : 'EEEE', EnumToString.convertToString(language))
+        .format(date);
   }
 
-  static String formatCurrentDate(String locale) =>
-      formatDate(currentDate(), locale);
+  static String formatCurrentDate(LiturgyLanguage language) =>
+      formatDate(currentDate(), language);
 
   static bool isSunday(DateTime date) => date.weekday == DateTime.sunday;
 

@@ -2,6 +2,7 @@ import 'package:intl/intl.dart';
 
 import '../catholic_liturgy.dart';
 import '_date_utilities.dart';
+import '_fixed_days.dart';
 
 extension MyDateCompare on DateTime {
   bool isSameDate(DateTime? otherDate) =>
@@ -63,8 +64,8 @@ class LiturgyFunctions {
       ? sixJanuary(year)
       : DateUtilities.nextSunday(maryHolyMotherOfGod(year));
 
-  static DateTime baptismOfTheLord(int year, bool isEpiphanyFeast) {
-    DateTime epiphanyDate = epiphany(year, isEpiphanyFeast);
+  static DateTime baptismOfTheLord(int year, bool isEpiphanyOn6thJan) {
+    DateTime epiphanyDate = epiphany(year, isEpiphanyOn6thJan);
     if (epiphanyDate.isSameDate(sevenJanuary(year)) ||
         epiphanyDate.isSameDate(eightJanuary(year))) {
       return (DateUtilities.addDaysToDate(epiphanyDate, 1));
@@ -128,12 +129,13 @@ class LiturgyFunctions {
           ? DateTime.utc(year, DateTime.december, 30)
           : DateUtilities.nextSunday(LiturgyFunctions.christmas(year));
 
-  static DateTime? _secondSundayAfterChristmas(int year, bool isEpiphanyFeast) {
+  static DateTime? _secondSundayAfterChristmas(
+      int year, bool isEpiphanyOn6thJan) {
     DateTime sundayAfterMaryHolyMotherOfGod =
         DateUtilities.nextSunday(LiturgyFunctions.maryHolyMotherOfGod(year));
-    return isEpiphanyFeast &&
+    return isEpiphanyOn6thJan &&
             sundayAfterMaryHolyMotherOfGod
-                .isBefore(LiturgyFunctions.epiphany(year, isEpiphanyFeast))
+                .isBefore(LiturgyFunctions.epiphany(year, isEpiphanyOn6thJan))
         ? sundayAfterMaryHolyMotherOfGod
         : null;
   }
@@ -246,12 +248,13 @@ class LiturgyFunctions {
     }
   }
 
-  static LiturgyEnum? solemnityCalculated(DateTime date, bool isEpiphanyFeast) {
+  static LiturgyEnum? solemnityCalculated(
+      DateTime date, bool isEpiphanyOn6thJan) {
     int year = date.year;
     if (date.isSameDate(_sacredHeart(year))) {
       return LiturgyEnum.sacredHeart;
     } else if (date
-        .isSameDate(LiturgyFunctions.epiphany(year, isEpiphanyFeast))) {
+        .isSameDate(LiturgyFunctions.epiphany(year, isEpiphanyOn6thJan))) {
       return LiturgyEnum.epiphany;
     } else if (date.isSameDate(_saintJoseph(year))) {
       return LiturgyEnum.saintJoseph;
@@ -262,12 +265,12 @@ class LiturgyFunctions {
     } else if (date.isSameDate(_holyFamily(year))) {
       return LiturgyEnum.holyFamily;
     } else if (date
-        .isSameDate(_secondSundayAfterChristmas(year, isEpiphanyFeast))) {
+        .isSameDate(_secondSundayAfterChristmas(year, isEpiphanyOn6thJan))) {
       return LiturgyEnum.secondSundayAfterChristmas;
     } else if (date.isSameDate(_immaculateConception(year))) {
       return LiturgyEnum.immaculateConception;
-    } else if (date
-        .isSameDate(LiturgyFunctions.baptismOfTheLord(year, isEpiphanyFeast))) {
+    } else if (date.isSameDate(
+        LiturgyFunctions.baptismOfTheLord(year, isEpiphanyOn6thJan))) {
       return LiturgyEnum.baptismOfTheLord;
     } else if (date.isSameDate(_palmSunday(year))) {
       return LiturgyEnum.palmSunday;
@@ -302,10 +305,10 @@ class LiturgyFunctions {
         : null;
   }
 
-  static int? _christmasWeekDay(DateTime date, bool isEpiphanyFeast) {
+  static int? _christmasWeekDay(DateTime date, bool isEpiphanyOn6thJan) {
     if (!DateUtilities.isSunday(date)) {
       DateTime epiphanyDate =
-          LiturgyFunctions.epiphany(date.year, isEpiphanyFeast);
+          LiturgyFunctions.epiphany(date.year, isEpiphanyOn6thJan);
       DateTime maryHolyMotherOfGodDate =
           LiturgyFunctions.maryHolyMotherOfGod(date.year);
       if (date.isAfter(maryHolyMotherOfGodDate) &&
@@ -316,13 +319,13 @@ class LiturgyFunctions {
     return null;
   }
 
-  static int? _ordinaryWeekDay(DateTime date, bool isEpiphanyFeast) {
+  static int? _ordinaryWeekDay(DateTime date, bool isEpiphanyOn6thJan) {
     if (!DateUtilities.isSunday(date)) {
       DateTime previousSundayDate = DateUtilities.previousSunday(date);
       int? week = _sundayOrdinaryTime(previousSundayDate);
 
       DateTime epiphanyDate =
-          LiturgyFunctions.epiphany(date.year, isEpiphanyFeast);
+          LiturgyFunctions.epiphany(date.year, isEpiphanyOn6thJan);
       if (epiphanyDate.isSameDate(previousSundayDate) &&
           (epiphanyDate.isSameDate(LiturgyFunctions.sevenJanuary(date.year)) ||
               epiphanyDate
@@ -336,17 +339,17 @@ class LiturgyFunctions {
     return null;
   }
 
-  static int? _weekdayAfterEpiphany(DateTime date, bool isEpiphanyFeast) {
+  static int? _weekdayAfterEpiphany(DateTime date, bool isEpiphanyOn6thJan) {
     if (DateUtilities.isSunday(date)) {
       return null;
     } else {
       int days = DateUtilities.daysBetweenDates(
-          LiturgyFunctions.epiphany(date.year, isEpiphanyFeast), date);
+          LiturgyFunctions.epiphany(date.year, isEpiphanyOn6thJan), date);
       return days > 0 && days <= 6 ? days : null;
     }
   }
 
-  static LiturgyModel? ferial(DateTime date, bool isEpiphanyFeast) {
+  static LiturgyModel? ferial(DateTime date, bool isEpiphanyOn6thJan) {
     int? number;
     LiturgyModel? ferialFixed = _ferialFixed(date);
     if (ferialFixed != null) {
@@ -366,20 +369,20 @@ class LiturgyFunctions {
           number: number,
           dayOfWeek: date.weekday,
           isFeast: false);
-    } else if ((number = _christmasWeekDay(date, isEpiphanyFeast)) != null) {
+    } else if ((number = _christmasWeekDay(date, isEpiphanyOn6thJan)) != null) {
       return LiturgyModel(
           category: LiturgyEnum.christmasWeekDay,
           number: number,
           dayOfWeek: null,
           isFeast: false);
-    } else if ((number = _weekdayAfterEpiphany(date, isEpiphanyFeast)) !=
+    } else if ((number = _weekdayAfterEpiphany(date, isEpiphanyOn6thJan)) !=
         null) {
       return LiturgyModel(
           category: LiturgyEnum.weekdayAfterEpiphany,
           number: number,
           dayOfWeek: null,
           isFeast: false);
-    } else if ((number = _ordinaryWeekDay(date, isEpiphanyFeast)) != null) {
+    } else if ((number = _ordinaryWeekDay(date, isEpiphanyOn6thJan)) != null) {
       return LiturgyModel(
           category: LiturgyEnum.ordinaryTime,
           number: number,
@@ -408,4 +411,9 @@ class LiturgyFunctions {
       return null;
     }
   }
+
+  static int liturgyYear(DateTime date) =>
+      (date.compareTo(LiturgyFunctions.adventStart(date.year)) >= 0)
+          ? date.year + 1
+          : date.year;
 }

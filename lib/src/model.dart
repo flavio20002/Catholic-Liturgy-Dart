@@ -84,6 +84,8 @@ enum LiturgyEnum {
   saintsMichaelGabrielAndRaphaelArchangels
 }
 
+enum LiturgyLanguage { it, en }
+
 class LiturgyModel {
   final LiturgyEnum category;
   final int? number;

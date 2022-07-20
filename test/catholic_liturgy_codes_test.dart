@@ -1,12 +1,9 @@
 import 'dart:io';
 
 import 'package:catholic_liturgy/catholic_liturgy.dart';
-import 'package:catholic_liturgy/src/cycles.dart';
-import 'package:catholic_liturgy/src/descriptions/liturgy_descriptions.dart';
 import 'package:csv/csv.dart';
 import 'package:enum_to_string/enum_to_string.dart';
 import 'package:flutter_test/flutter_test.dart';
-import 'package:intl/date_symbol_data_local.dart';
 import 'package:intl/intl.dart';
 
 main() async {
@@ -17,7 +14,7 @@ main() async {
   group('Lecture utilities', () {
     void checkFeastLecturesCycle(String date, String expected) {
       test('Feast lecture cycle of $date should be $expected', () {
-        expect(CyclesUtilities.feastLecturesCycle(parse(date)), expected);
+        expect(feastLecturesCycle(parse(date)), expected);
       });
     }
 
@@ -28,7 +25,7 @@ main() async {
 
     void checkFerialLecturesCycle(String date, String expected) {
       test('Ferial lecture cycle of $date should be $expected', () {
-        expect(CyclesUtilities.ferialLectureCycle(parse(date)), expected);
+        expect(ferialLectureCycle(parse(date)), expected);
       });
     }
 
@@ -49,25 +46,24 @@ main() async {
   List<List<dynamic>> testDataRows =
       const CsvToListConverter().convert(testData, eol: '\n');
 
-  void checkLiturgy(String date, bool isEpiphanyFeast, LiturgyModel? expected) {
-    final actual = Liturgy.liturgy(parse(date), isEpiphanyFeast);
-    test('Liturgy of $date ($isEpiphanyFeast) should be $expected', () {
+  void checkLiturgy(
+      String date, bool isEpiphanyOn6thJan, LiturgyModel? expected) {
+    final actual = liturgy(parse(date), isEpiphanyOn6thJan);
+    test('Liturgy of $date ($isEpiphanyOn6thJan) should be $expected', () {
       expect(actual, expected);
     });
   }
 
   void checkLiturgyDescription(
-      LiturgyModel liturgyModel, String language, String expected) {
-    final actual =
-        LiturgyDescriptions.liturgyDescriptions(liturgyModel, language);
+      LiturgyModel liturgyModel, LiturgyLanguage language, String expected) {
+    final actual = liturgyDescriptions(liturgyModel, language);
     test('Liturgy of ${liturgyModel.toString()} should be $expected', () {
       expect(actual, expected);
     });
   }
 
   group('Liturgy codes', () {
-    initializeDateFormatting('it', null);
-    initializeDateFormatting('en', null);
+    initializeLanguage(LiturgyLanguage.it);
     for (final row in testDataRows) {
       LiturgyModel? expected = LiturgyModel(
           category: EnumToString.fromString(LiturgyEnum.values, row[2])!,
@@ -83,8 +79,10 @@ main() async {
       if (row.length > 6) {
         String? descriptionExpectedIT = row[6];
         String? descriptionExpectedEN = row[7];
-        checkLiturgyDescription(expected, 'it', descriptionExpectedIT!);
-        checkLiturgyDescription(expected, 'en', descriptionExpectedEN!);
+        checkLiturgyDescription(
+            expected, LiturgyLanguage.it, descriptionExpectedIT!);
+        checkLiturgyDescription(
+            expected, LiturgyLanguage.en, descriptionExpectedEN!);
       }
     }
   });

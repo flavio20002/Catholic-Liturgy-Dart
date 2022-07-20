@@ -1,6 +1,6 @@
+import 'package:catholic_liturgy/catholic_liturgy.dart';
 import 'package:catholic_liturgy/src/_date_utilities.dart';
 import 'package:flutter_test/flutter_test.dart';
-import 'package:intl/date_symbol_data_local.dart';
 import 'package:intl/intl.dart';
 
 main() async {
@@ -9,28 +9,30 @@ main() async {
   parse(String dateString) => df.parseUTC(dateString);
 
   group('Home lectures card Test', () {
-    void checkFormatDate(String date, String language, String expected) {
+    void checkFormatDate(
+        String date, LiturgyLanguage language, String expected) {
       test('$date in language $language should be formatted as $expected', () {
-        initializeDateFormatting(language, null);
+        initializeLanguage(language);
         String formattedDate = DateUtilities.formatDate(parse(date), language);
         expect(formattedDate, expected);
       });
     }
 
-    checkFormatDate('31/05/2020', 'it', 'Domenica, 31 maggio 2020');
-    checkFormatDate('31/05/2020', 'en', 'Sunday, 31 May 2020');
+    checkFormatDate(
+        '31/05/2020', LiturgyLanguage.it, 'Domenica, 31 maggio 2020');
+    checkFormatDate('31/05/2020', LiturgyLanguage.en, 'Sunday, 31 May 2020');
 
-    void checkFormatCurrentDate(String language) {
+    void checkFormatCurrentDate(LiturgyLanguage language) {
       test('Check Format current date in language $language', () {
-        initializeDateFormatting(language, null);
+        initializeLanguage(language);
         String formattedDate = DateUtilities.formatCurrentDate(language);
         expect(formattedDate,
             DateUtilities.formatDate(DateUtilities.currentDate(), language));
       });
     }
 
-    checkFormatCurrentDate('it');
-    checkFormatCurrentDate('en');
+    checkFormatCurrentDate(LiturgyLanguage.it);
+    checkFormatCurrentDate(LiturgyLanguage.en);
   });
 
   group('Lecture utilities', () {

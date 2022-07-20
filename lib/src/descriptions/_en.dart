@@ -62,7 +62,7 @@ class LiturgyDescriptionsEN {
       if (liturgyModel.dayOfWeek == null) {
         return '${liturgyModel.number}${_ordinal(liturgyModel.number!)} Sunday of Lent';
       } else {
-        return 'Lent, Week ${liturgyModel.number}, ${DateUtilities.dayOfWeek(liturgyModel.dayOfWeek!, 'en', true)}';
+        return 'Lent, Week ${liturgyModel.number}, ${DateUtilities.dayOfWeek(liturgyModel.dayOfWeek!, LiturgyLanguage.en, true)}';
       }
     } else if (liturgyModel.category == LiturgyEnum.advent) {
       if (liturgyModel.isFeast) {

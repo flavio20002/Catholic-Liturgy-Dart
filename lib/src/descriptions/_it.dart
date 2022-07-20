@@ -42,7 +42,7 @@ class LiturgyDescriptionsIT {
       if (liturgyModel.dayOfWeek == null) {
         return '${liturgyModel.number}° Domenica di Quaresima';
       } else {
-        return '${liturgyModel.number}° settimana di quaresima, ${DateUtilities.dayOfWeek(liturgyModel.dayOfWeek!, 'it', false)}';
+        return '${liturgyModel.number}° settimana di quaresima, ${DateUtilities.dayOfWeek(liturgyModel.dayOfWeek!, LiturgyLanguage.it, false)}';
       }
     } else if (liturgyModel.category == LiturgyEnum.advent) {
       if (liturgyModel.isFeast) {
