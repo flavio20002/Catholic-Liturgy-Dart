@@ -57,7 +57,7 @@ class LiturgyDescriptionsEN {
     LiturgyEnum.theTransfigurationOfTheLord: 'The Transfiguration of the Lord',
   };
 
-  static String? liturgyDescriptions(LiturgyModel liturgyModel) {
+  static String? liturgyDescription(LiturgyModel liturgyModel) {
     if (liturgyModel.category == LiturgyEnum.lent) {
       if (liturgyModel.dayOfWeek == null) {
         return '${liturgyModel.number}${_ordinal(liturgyModel.number!)} Sunday of Lent';

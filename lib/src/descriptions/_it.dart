@@ -37,7 +37,7 @@ class LiturgyDescriptionsIT {
     LiturgyEnum.theTransfigurationOfTheLord: 'Trasfigurazione del Signore',
   };
 
-  static String? liturgyDescriptions(LiturgyModel liturgyModel) {
+  static String? liturgyDescription(LiturgyModel liturgyModel) {
     if (liturgyModel.category == LiturgyEnum.lent) {
       if (liturgyModel.dayOfWeek == null) {
         return '${liturgyModel.number}° Domenica di Quaresima';

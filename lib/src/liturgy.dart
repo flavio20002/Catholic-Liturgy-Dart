@@ -65,16 +65,16 @@ LiturgyModel? liturgy(DateTime date, bool isEpiphanyOn6thJan) {
   return null;
 }
 
-void initializeLanguage(LiturgyLanguage language) {
-  initializeDateFormatting(EnumToString.convertToString(language), null);
+Future<void> initializeLanguage(LiturgyLanguage language) async {
+  await initializeDateFormatting(EnumToString.convertToString(language), null);
 }
 
-String? liturgyDescriptions(
+String? liturgyDescription(
     LiturgyModel liturgyModel, LiturgyLanguage language) {
   if (language == LiturgyLanguage.it) {
-    return LiturgyDescriptionsIT.liturgyDescriptions(liturgyModel);
+    return LiturgyDescriptionsIT.liturgyDescription(liturgyModel);
   } else if (language == LiturgyLanguage.en) {
-    return LiturgyDescriptionsEN.liturgyDescriptions(liturgyModel);
+    return LiturgyDescriptionsEN.liturgyDescription(liturgyModel);
   }
   return null;
 }
