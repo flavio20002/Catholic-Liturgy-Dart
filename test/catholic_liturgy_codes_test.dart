@@ -56,7 +56,7 @@ main() async {
 
   void checkLiturgyDescription(
       LiturgyModel liturgyModel, LiturgyLanguage language, String expected) {
-    final actual = liturgyDescriptions(liturgyModel, language);
+    final actual = liturgyDescription(liturgyModel, language);
     test('Liturgy of ${liturgyModel.toString()} should be $expected', () {
       expect(actual, expected);
     });
