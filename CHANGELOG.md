@@ -6,3 +6,7 @@
 
 * Changed signature of liturgyDescriptions to liturgyDescription
 * Fixed signature initializeLanguage to async
+
+## 0.0.3
+
+* Fixed min version

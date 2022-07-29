@@ -7,6 +7,7 @@ import 'descriptions/_en.dart';
 import 'descriptions/_it.dart';
 import 'model.dart';
 
+/// Calculate liturgy of the [date] day, using the [isEpiphanyOn6thJan] flag.
 LiturgyModel? liturgy(DateTime date, bool isEpiphanyOn6thJan) {
   DateTime dateCleaned = DateUtilities.cleanDate(date);
   int? lentWeekNumber = LiturgyFunctions.lentWeek(dateCleaned);
@@ -65,10 +66,12 @@ LiturgyModel? liturgy(DateTime date, bool isEpiphanyOn6thJan) {
   return null;
 }
 
+/// Initialize the [language] language.
 Future<void> initializeLanguage(LiturgyLanguage language) async {
   await initializeDateFormatting(EnumToString.convertToString(language), null);
 }
 
+/// Get the description of the [liturgyModel] model in the [language] language.
 String? liturgyDescription(
     LiturgyModel liturgyModel, LiturgyLanguage language) {
   if (language == LiturgyLanguage.it) {
@@ -79,6 +82,7 @@ String? liturgyDescription(
   return null;
 }
 
+/// Get feast lecture cycle of the provided [date]
 String feastLecturesCycle(DateTime date) {
   switch ((LiturgyFunctions.liturgyYear(date) - 2014) % 3) {
     case 0:
@@ -90,6 +94,7 @@ String feastLecturesCycle(DateTime date) {
   }
 }
 
+/// Get ferial lecture cycle of the provided [date]
 String ferialLectureCycle(DateTime date) {
   switch ((LiturgyFunctions.liturgyYear(date) - 2015) % 2) {
     case 0:
