@@ -10,3 +10,7 @@
 ## 0.0.3
 
 * Fixed min version
+
+## 0.0.4
+
+* Fixed ordinary time

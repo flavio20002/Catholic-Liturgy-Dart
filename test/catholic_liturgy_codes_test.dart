@@ -38,7 +38,7 @@ main() async {
   String testData;
   const filePath = 'test/catholic_liturgy_codes_test.csv';
   try {
-    testData = await File(filePath).readAsString();
+    testData = (await File(filePath).readAsString()).replaceAll("\r", "");
   } catch (e) {
     testData = await File("../$filePath").readAsString();
   }

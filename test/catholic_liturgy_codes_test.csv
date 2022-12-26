@@ -455,6 +455,23 @@
 "01/01/2022",*,maryHolyMotherOfGod,null,null,true,"Maria Ss. Madre di Dio","Jan. 1: Mary, Mother of God"
 "02/01/2022",true,secondSundayAfterChristmas,null,null,true,"2° Domenica dopo Natale","2nd Sunday after Christmas"
 "02/01/2022",false,epiphany,null,null,true,"Epifania del Signore","The Epiphany of the Lord"
+"03/01/2022",true,christmasWeekDay,3,null,false
+"03/01/2022",false,weekdayAfterEpiphany,1,null,false
+"04/01/2022",true,christmasWeekDay,4,null,false
+"04/01/2022",false,weekdayAfterEpiphany,2,null,false
+"05/01/2022",true,christmasWeekDay,5,null,false
+"05/01/2022",false,weekdayAfterEpiphany,3,null,false
+"06/01/2022",true,epiphany,null,null,true,"Epifania del Signore","The Epiphany of the Lord"
+"06/01/2022",false,weekdayAfterEpiphany,4,null,false
+"07/01/2022",true,weekdayAfterEpiphany,1,null,false
+"07/01/2022",false,weekdayAfterEpiphany,5,null,false
+"08/01/2022",true,weekdayAfterEpiphany,2,null,false
+"08/01/2022",false,weekdayAfterEpiphany,6,null,false
+"09/01/2022",*,baptismOfTheLord,null,null,true
+"10/01/2022",*,ordinaryTime,1,1,false
+"11/01/2022",*,ordinaryTime,1,2,false
+"12/01/2022",*,ordinaryTime,1,3,false
+"13/01/2022",*,ordinaryTime,1,4,false
 "19/03/2022",*,saintJoseph,null,null,true
 "25/03/2022",*,annunciation,null,null,true
 "24/06/2022",*,sacredHeart,null,null,true

@@ -375,18 +375,18 @@ class LiturgyFunctions {
           number: number,
           dayOfWeek: null,
           isFeast: false);
+    } else if ((number = _ordinaryWeekDay(date, isEpiphanyOn6thJan)) != null) {
+      return LiturgyModel(
+          category: LiturgyEnum.ordinaryTime,
+          number: number,
+          dayOfWeek: date.weekday,
+          isFeast: false);
     } else if ((number = _weekdayAfterEpiphany(date, isEpiphanyOn6thJan)) !=
         null) {
       return LiturgyModel(
           category: LiturgyEnum.weekdayAfterEpiphany,
           number: number,
           dayOfWeek: null,
-          isFeast: false);
-    } else if ((number = _ordinaryWeekDay(date, isEpiphanyOn6thJan)) != null) {
-      return LiturgyModel(
-          category: LiturgyEnum.ordinaryTime,
-          number: number,
-          dayOfWeek: date.weekday,
           isFeast: false);
     } else if ((number = _adventWeek(date)) != null) {
       return LiturgyModel(
