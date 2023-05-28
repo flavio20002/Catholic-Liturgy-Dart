@@ -26,3 +26,6 @@
 ## 0.0.7
 
 * Upgrade version
+
+## 0.0.8
+* Upgrade version
