@@ -103,3 +103,9 @@ String ferialLectureCycle(DateTime date) {
       return "2";
   }
 }
+
+bool isLent(DateTime date) {
+  DateTime dateCleaned = DateUtilities.cleanDate(date);
+  int? lentWeekNumber = LiturgyFunctions.lentWeek(dateCleaned);
+  return lentWeekNumber != null;
+}

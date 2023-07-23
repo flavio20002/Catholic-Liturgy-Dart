@@ -29,3 +29,6 @@
 
 ## 0.0.8
 * Upgrade version
+
+## 0.0.9
+* Add inLent function
