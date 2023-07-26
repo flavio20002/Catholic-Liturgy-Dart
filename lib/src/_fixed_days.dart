@@ -1,7 +1,6 @@
 import '../catholic_liturgy.dart';
 
 Map<String, LiturgyEnum> ferialFixedLiturgy = {
-  '02/01': LiturgyEnum.saintsBasilAndGregoryNazianzen,
   '25/01': LiturgyEnum.theConversionOfSaintPaulTheApostle,
   '26/01': LiturgyEnum.saintsTimothyAndTitusBishops,
   '14/02': LiturgyEnum.saintsCyrilAndMethodius,

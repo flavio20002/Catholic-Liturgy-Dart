@@ -76,13 +76,14 @@ enum LiturgyEnum {
   saintsCyrilAndMethodius,
   saintMartha,
   saintJamesApostle,
-  saintsBasilAndGregoryNazianzen,
   saintMatthiasApostle,
   saintsPeterAndPaul,
   saintsTimothyAndTitusBishops,
   saintJohnApostleAndEvangelist,
   saintsMichaelGabrielAndRaphaelArchangels
 }
+
+enum SaintMemoryEnum { saintsBasilAndGregoryNazianzen }
 
 enum LiturgyLanguage { it, en }
 

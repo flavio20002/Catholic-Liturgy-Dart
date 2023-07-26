@@ -32,3 +32,6 @@
 
 ## 0.0.9
 * Add inLent function
+
+## 0.0.10
+* Fix an issue with saintsBasilAndGregoryNazianzen
