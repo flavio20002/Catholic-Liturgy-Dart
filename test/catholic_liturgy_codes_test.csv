@@ -219,7 +219,7 @@
 "29/05/2020",*,easter,7,5,false
 "30/05/2020",*,easter,7,6,false
 "31/05/2020",*,pentecost,null,null,true,"Pentecoste","Pentecost Sunday"
-"01/06/2020",*,ordinaryTime,9,1,false
+"01/06/2020",*,memorialOfTheBlessedVirginMaryMotherOfTheChurch,null,null,true
 "02/06/2020",*,ordinaryTime,9,2,false
 "03/06/2020",*,ordinaryTime,9,3,false
 "04/06/2020",*,ordinaryTime,9,4,false
@@ -476,6 +476,7 @@
 "25/03/2022",*,annunciation,null,null,true
 "24/06/2022",*,sacredHeart,null,null,true
 "25/06/2022",*,immaculateHeartOfMary,null,null,true
+"29/05/2023",*,memorialOfTheBlessedVirginMaryMotherOfTheChurch,null,null,true
 "16/06/2023",*,sacredHeart,null,null,true
 "17/06/2023",*,immaculateHeartOfMary,null,null,true
 "07/06/2024",*,sacredHeart,null,null,true

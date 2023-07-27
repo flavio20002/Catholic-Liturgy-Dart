@@ -80,7 +80,8 @@ enum LiturgyEnum {
   saintsPeterAndPaul,
   saintsTimothyAndTitusBishops,
   saintJohnApostleAndEvangelist,
-  saintsMichaelGabrielAndRaphaelArchangels
+  saintsMichaelGabrielAndRaphaelArchangels,
+  memorialOfTheBlessedVirginMaryMotherOfTheChurch
 }
 
 enum SaintMemoryEnum { saintsBasilAndGregoryNazianzen }

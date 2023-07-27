@@ -100,6 +100,10 @@ class LiturgyFunctions {
     }
   }
 
+  static DateTime _memorialOfTheBlessedVirginMaryMotherOfTheChurch(int year) {
+    return DateUtilities.addDaysToDate(_pentecost(year), 1);
+  }
+
   static DateTime _saintJoseph(int year) {
     DateTime saintJosephDate = DateTime.utc(year, DateTime.march, 19);
     DateTime palmSundayDate = _palmSunday(year);
@@ -274,6 +278,9 @@ class LiturgyFunctions {
       return LiturgyEnum.baptismOfTheLord;
     } else if (date.isSameDate(_palmSunday(year))) {
       return LiturgyEnum.palmSunday;
+    } else if (date
+        .isSameDate(_memorialOfTheBlessedVirginMaryMotherOfTheChurch(year))) {
+      return LiturgyEnum.memorialOfTheBlessedVirginMaryMotherOfTheChurch;
     } else {
       return null;
     }

@@ -35,3 +35,6 @@
 
 ## 0.0.10
 * Fix an issue with saintsBasilAndGregoryNazianzen
+
+## 0.0.11
+* Add Memorial of the Blessed Virgin Mary, Mother of the Church
