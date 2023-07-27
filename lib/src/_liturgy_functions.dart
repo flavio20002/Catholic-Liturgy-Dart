@@ -312,6 +312,13 @@ class LiturgyFunctions {
         : null;
   }
 
+  static FranciscanFeastMemoryEnum? franciscanFeastMemory(DateTime date) {
+    String dateFormatted = DateFormat('dd/MM').format(date);
+    return franciscanFeastMemoryFixed.containsKey(dateFormatted)
+        ? franciscanFeastMemoryFixed[dateFormatted]!
+        : null;
+  }
+
   static int? _christmasWeekDay(DateTime date, bool isEpiphanyOn6thJan) {
     if (!DateUtilities.isSunday(date)) {
       DateTime epiphanyDate =

@@ -63,3 +63,40 @@ Map<String, LiturgyEnum> feastFixedLiturgy = {
   '09/11': LiturgyEnum.theDedicationOfTheLateranBasilica,
   '25/12': LiturgyEnum.christmas,
 };
+
+Map<String, FranciscanFeastMemoryEnum> franciscanFeastMemoryFixed = {
+  '24/05':
+      FranciscanFeastMemoryEnum.dedicazioneDellaBasilicaDiSanFrancescoInAssisi,
+  '15/07': FranciscanFeastMemoryEnum.sanBonaventuraVescovoEDottoreDellaChiesa,
+  '11/08': FranciscanFeastMemoryEnum
+      .santaMadreChiaraVergineCofondatriceDelIIOrdineFrancescano,
+  '14/08':
+      FranciscanFeastMemoryEnum.sanMassimilianoMariaKolbePresbiteroEMartire,
+  '02/08': FranciscanFeastMemoryEnum
+      .santaMariaDegliAngeliAllaPorziuncolaPerdonDAssisi,
+  '08/08': FranciscanFeastMemoryEnum.sanDomenicoPresbitero,
+  '17/09': FranciscanFeastMemoryEnum.impressioneDelleStimmateDiSanFrancesco,
+  '18/09': FranciscanFeastMemoryEnum.sanGiuseppeDaCopertinoPresbitero,
+  '16/01': FranciscanFeastMemoryEnum
+      .santiBerardoECompagniProtomartiriDellOrdineFrancescano,
+  '30/01': FranciscanFeastMemoryEnum.santaGiacintaMariscottiVergine,
+  '03/01': FranciscanFeastMemoryEnum.santissimoNomediGesu,
+  '23/10': FranciscanFeastMemoryEnum.sanGiovanniDaCapestranoPresbitero,
+  '14/11': FranciscanFeastMemoryEnum.sanNicolaTavelicPresbiteroECompagniMartiri,
+  '26/11': FranciscanFeastMemoryEnum.sanLeonardoDaPortoMaurizioPresbitero,
+  '27/11': FranciscanFeastMemoryEnum.sanFrancescoAntonioFasaniPresbitero,
+  '06/02': FranciscanFeastMemoryEnum
+      .ssPietroBattistaPaoloMikiECompagniProtomartiriDelGiappone,
+  '07/08': FranciscanFeastMemoryEnum.sColetaDaCorbieVergine,
+  '24/04': FranciscanFeastMemoryEnum.sFedeleDaSigmaringenSacerdoteEMartire,
+  '12/05': FranciscanFeastMemoryEnum.sanLeopoldoMandicDaCastelnuovoPresbitero,
+  '16/05': FranciscanFeastMemoryEnum.santaMargheritaDaCortonaPenitente,
+  '17/05': FranciscanFeastMemoryEnum.sanPasqualeBaylonReligioso,
+  '18/05': FranciscanFeastMemoryEnum.sanFeliceDaCantaliceReligioso,
+  '20/05': FranciscanFeastMemoryEnum.sanBernardinoDaSienaPresbitero,
+  '10/07': FranciscanFeastMemoryEnum.santaVeronicaGiulianiVergine,
+  '21/07': FranciscanFeastMemoryEnum
+      .sanLorenzoDaBrindisiPresbiteroEDottoreDellaChiesa,
+  '25/08': FranciscanFeastMemoryEnum
+      .sanLudovicoIXRePatronoDelOrdineFrancescanoSecolare,
+};

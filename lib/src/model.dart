@@ -86,6 +86,35 @@ enum LiturgyEnum {
 
 enum SaintMemoryEnum { saintsBasilAndGregoryNazianzen }
 
+enum FranciscanFeastMemoryEnum {
+  dedicazioneDellaBasilicaDiSanFrancescoInAssisi,
+  sanBonaventuraVescovoEDottoreDellaChiesa,
+  santaMadreChiaraVergineCofondatriceDelIIOrdineFrancescano,
+  sanMassimilianoMariaKolbePresbiteroEMartire,
+  santaMariaDegliAngeliAllaPorziuncolaPerdonDAssisi,
+  sanDomenicoPresbitero,
+  impressioneDelleStimmateDiSanFrancesco,
+  sanGiuseppeDaCopertinoPresbitero,
+  santiBerardoECompagniProtomartiriDellOrdineFrancescano,
+  santaGiacintaMariscottiVergine,
+  santissimoNomediGesu,
+  sanGiovanniDaCapestranoPresbitero,
+  sanNicolaTavelicPresbiteroECompagniMartiri,
+  sanLeonardoDaPortoMaurizioPresbitero,
+  sanFrancescoAntonioFasaniPresbitero,
+  ssPietroBattistaPaoloMikiECompagniProtomartiriDelGiappone,
+  sColetaDaCorbieVergine,
+  sFedeleDaSigmaringenSacerdoteEMartire,
+  sanLeopoldoMandicDaCastelnuovoPresbitero,
+  santaMargheritaDaCortonaPenitente,
+  sanPasqualeBaylonReligioso,
+  sanFeliceDaCantaliceReligioso,
+  sanBernardinoDaSienaPresbitero,
+  santaVeronicaGiulianiVergine,
+  sanLorenzoDaBrindisiPresbiteroEDottoreDellaChiesa,
+  sanLudovicoIXRePatronoDelOrdineFrancescanoSecolare
+}
+
 enum LiturgyLanguage { it, en }
 
 class LiturgyModel {

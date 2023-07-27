@@ -1,3 +1,22 @@
 {
-    "editor.formatOnSave": true
+    "editor.formatOnSave": true,
+    "cSpell.language": "en,it",
+    "cSpell.words": [
+        "Baylon",
+        "Benedicta",
+        "Cantalice",
+        "Coleta",
+        "Fasani",
+        "Kolbe",
+        "Lawrencer",
+        "Mandic",
+        "Mariscotti",
+        "Miki",
+        "Nazianzen",
+        "Nomedi",
+        "Perdon",
+        "Porziuncola",
+        "Sigmaringen",
+        "Tavelic"
+    ]
 }

@@ -109,3 +109,7 @@ bool isLent(DateTime date) {
   int? lentWeekNumber = LiturgyFunctions.lentWeek(dateCleaned);
   return lentWeekNumber != null;
 }
+
+FranciscanFeastMemoryEnum? franciscanFeastMemory(DateTime date) {
+  return LiturgyFunctions.franciscanFeastMemory(date);
+}

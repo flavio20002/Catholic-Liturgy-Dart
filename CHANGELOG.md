@@ -38,3 +38,6 @@
 
 ## 0.0.11
 * Add Memorial of the Blessed Virgin Mary, Mother of the Church
+
+## 0.0.12
+* Add franciscanFeastMemory
