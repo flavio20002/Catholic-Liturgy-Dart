@@ -84,7 +84,7 @@ enum LiturgyEnum {
 }
 
 enum SaintMemoryEnum {
-  santantonioAbatesant,
+  santantonioAbate,
   santiBasilioMagnoEGregorioNazianzenoVescoviEDottoriDellaChiesa,
   santagneseVergineEMartire,
   sanFrancescoDiSalesVescovoEDottoreDellaChiesa,

@@ -1,6 +1,6 @@
 name: catholic_liturgy
 description: A package to calculate the Catholic Liturgy for every date and obtain liturgy description in multiple languages.
-version: 0.0.13
+version: 0.0.14
 homepage: https://github.com/flavio20002/Catholic-Liturgy-Dart
 
 environment:
