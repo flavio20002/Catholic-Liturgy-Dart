@@ -319,6 +319,20 @@ class LiturgyFunctions {
         : null;
   }
 
+  static SaintMemoryEnum? saintMemory(DateTime date) {
+    String dateFormatted = DateFormat('dd/MM').format(date);
+    return saintsMemoryFixed.containsKey(dateFormatted)
+        ? saintsMemoryFixed[dateFormatted]!
+        : null;
+  }
+
+  static FacultativeSaintMemoryEnum? facultativeSaintMemory(DateTime date) {
+    String dateFormatted = DateFormat('dd/MM').format(date);
+    return facultativeSaintsMemoryFixed.containsKey(dateFormatted)
+        ? facultativeSaintsMemoryFixed[dateFormatted]!
+        : null;
+  }
+
   static int? _christmasWeekDay(DateTime date, bool isEpiphanyOn6thJan) {
     if (!DateUtilities.isSunday(date)) {
       DateTime epiphanyDate =

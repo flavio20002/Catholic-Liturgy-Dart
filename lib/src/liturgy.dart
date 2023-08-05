@@ -113,3 +113,11 @@ bool isLent(DateTime date) {
 FranciscanFeastMemoryEnum? franciscanFeastMemory(DateTime date) {
   return LiturgyFunctions.franciscanFeastMemory(date);
 }
+
+SaintMemoryEnum? saintMemory(DateTime date) {
+  return LiturgyFunctions.saintMemory(date);
+}
+
+FacultativeSaintMemoryEnum? facultativeSaintMemory(DateTime date) {
+  return LiturgyFunctions.facultativeSaintMemory(date);
+}
