@@ -13,7 +13,6 @@ Map<String, LiturgyEnum> ferialFixedLiturgy = {
   '14/05': LiturgyEnum.saintMatthiasApostle,
   '31/05': LiturgyEnum.theVisitationOfTheBlessedVirginMary,
   '11/06': LiturgyEnum.saintBarnabasApostle,
-  '13/06': LiturgyEnum.saintAnthonyOfPadua,
   '03/07': LiturgyEnum.saintThomasApostle,
   '11/07': LiturgyEnum.saintBenedictAbbot,
   '22/07': LiturgyEnum.saintMaryMagdalene,

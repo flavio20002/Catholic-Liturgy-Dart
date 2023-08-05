@@ -41,3 +41,6 @@
 
 ## 0.0.12
 * Add franciscanFeastMemory
+
+## 0.0.13
+* Add saints
